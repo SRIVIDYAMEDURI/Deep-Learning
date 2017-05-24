@@ -2,7 +2,7 @@
 
 #### Python
 
-* `Theano <http://deeplearning.net/software/theano/>` is a python library for defining and evaluating mathematical expressions with numerical arrays. It makes it easy to write deep learning algorithms in python. On the top of the Theano many more libraries are built.
+* `Theano <http://deeplearning.net/software/theano/>`- is a python library for defining and evaluating mathematical expressions with numerical arrays. It makes it easy to write deep learning algorithms in python. On the top of the Theano many more libraries are built.
   * [Keras](https://keras.io/) is a minimalist, highly modular neural network library in the spirit of Torch, written in Python, that uses Theano under the hood for optimized tensor manipulation on GPU and CPU.
   * [Pylearn2](http://deeplearning.net/software/pylearn2/) is a library that wraps a lot of models and training algorithms such as Stochastic Gradient Descent that are commonly used in Deep Learning. Its functional libraries are built on top of Theano.
   * [Lasagne] is a lightweight library to build and train neural networks in Theano. It is governed by simplicity, transparency, modularity, pragmatism , focus and restraint principles.
