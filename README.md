@@ -1,6 +1,6 @@
 # Deep Learning Libraries by Language
 
-####Python
+#### Python
 
 Theano is a python library for defining and evaluating mathematical expressions with numerical arrays. It makes it easy to write deep learning algorithms in python. On the top of the Theano many more libraries are built.
 
