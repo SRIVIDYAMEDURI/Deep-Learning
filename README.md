@@ -2,21 +2,21 @@
 
 #### Python
 
-* [Theano]<http://deeplearning.net/software/theano/> is a python library for defining and evaluating mathematical expressions with numerical arrays. It makes it easy to write deep learning algorithms in python. On the top of the Theano many more libraries are built.
+* [Theano](http://deeplearning.net/software/theano/) is a python library for defining and evaluating mathematical expressions with numerical arrays. It makes it easy to write deep learning algorithms in python. On the top of the Theano many more libraries are built.
   * [Keras](https://keras.io/) is a minimalist, highly modular neural network library in the spirit of Torch, written in Python, that uses Theano under the hood for optimized tensor manipulation on GPU and CPU.
   * [Pylearn2](http://deeplearning.net/software/pylearn2/) is a library that wraps a lot of models and training algorithms such as Stochastic Gradient Descent that are commonly used in Deep Learning. Its functional libraries are built on top of Theano.
-  * [Lasagne] is a lightweight library to build and train neural networks in Theano. It is governed by simplicity, transparency, modularity, pragmatism , focus and restraint principles.
-  * Blocks a framework that helps you build neural network models on top of Theano.
-* Caffe is a deep learning framework made with expression, speed, and modularity in mind. It is developed by the Berkeley Vision and Learning Center (BVLC) and by community contributors. Google's DeepDream is based on Caffe Framework. This framework is a BSD-licensed C++ library with Python Interface.
-* nolearn contains a number of wrappers and abstractions around existing neural network libraries, most notably Lasagne, along with a few machine learning utility modules.
-* Gensim is deep learning toolkit implemented in python programming language intended for handling large text collections, using efficient algorithms.
-* Chainer bridge the gap between algorithms and implementations of deep learning. Its powerful, flexible and intuitive and is considered as the flexible framework for Deep Learning.
-* deepnet is a GPU-based python implementation of deep learning algorithms like Feed-forward Neural Nets, Restricted Boltzmann Machines, Deep Belief Nets, Autoencoders, Deep Boltzmann Machines and Convolutional Neural Nets.
-* Hebel is a library for deep learning with neural networks in Python using GPU acceleration with CUDA through PyCUDA. It implements the most important types of neural network models and offers a variety of different activation functions and training methods such as momentum, Nesterov momentum, dropout, and early stopping.
-* CXXNET is fast, concise, distributed deep learning framework based on MShadow. It is a lightweight and easy extensible C++/CUDA neural network toolkit with friendly Python/Matlab interface for training and prediction.
-* DeepPy is a Pythonic deep learning framework built on top of NumPy.
-* DeepLearning is deep learning library, developed with C++ and python.
-* Neon is Nervana's Python based Deep Learning framework.
+  * [Lasagne](https://github.com/Lasagne/Lasagne) is a lightweight library to build and train neural networks in Theano. It is governed by simplicity, transparency, modularity, pragmatism , focus and restraint principles.
+  * [Blocks](https://github.com/mila-udem/blocks) a framework that helps you build neural network models on top of Theano.
+* [Caffe](http://caffe.berkeleyvision.org/) is a deep learning framework made with expression, speed, and modularity in mind. It is developed by the Berkeley Vision and Learning Center (BVLC) and by community contributors. Google's DeepDream is based on Caffe Framework. This framework is a BSD-licensed C++ library with Python Interface.
+* [nolearn](https://github.com/dnouri/nolearn) contains a number of wrappers and abstractions around existing neural network libraries, most notably Lasagne, along with a few machine learning utility modules.
+* [Gensim](http://radimrehurek.com/gensim/) is deep learning toolkit implemented in python programming language intended for handling large text collections, using efficient algorithms.
+* [Chainer](http://chainer.org/) bridge the gap between algorithms and implementations of deep learning. Its powerful, flexible and intuitive and is considered as the flexible framework for Deep Learning.
+* [deepnet](https://github.com/nitishsrivastava/deepnet) is a GPU-based python implementation of deep learning algorithms like Feed-forward Neural Nets, Restricted Boltzmann Machines, Deep Belief Nets, Autoencoders, Deep Boltzmann Machines and Convolutional Neural Nets.
+* [Hebel](https://github.com/hannes-brt/hebel) is a library for deep learning with neural networks in Python using GPU acceleration with CUDA through PyCUDA. It implements the most important types of neural network models and offers a variety of different activation functions and training methods such as momentum, Nesterov momentum, dropout, and early stopping.
+* [CXXNET](https://github.com/dmlc/cxxnet) is fast, concise, distributed deep learning framework based on MShadow. It is a lightweight and easy extensible C++/CUDA neural network toolkit with friendly Python/Matlab interface for training and prediction.
+* [DeepPy](https://github.com/andersbll/deeppy) is a Pythonic deep learning framework built on top of NumPy.
+* [DeepLearning]https://github.com/vishwa-raman/DeepLearning) is deep learning library, developed with C++ and python.
+* [Neon](https://github.com/NervanaSystems/neon) is Nervana's Python based Deep Learning framework.
 
 #### Matlab
 
