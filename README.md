@@ -20,56 +20,48 @@
 
 #### Matlab
 
-ConvNet Convolutional neural net is a type of deep learning classification algorithms, that can learn useful features from raw data by themselves and is performed by tuning its weighs.
+* ConvNet Convolutional neural net is a type of deep learning classification algorithms, that can learn useful features from raw data by themselves and is performed by tuning its weighs.
+* DeepLearnToolBox is a matlab/octave toolbox for deep learning and includes Deep Belief Nets, Stacked Autoencoders, convolutional neural nets.
+* cuda-convnet is a fast C++/CUDA implementation of convolutional (or more generally, feed-forward) neural networks. It can model arbitrary layer connectivity and network depth. Any directed acyclic graph of layers will do. Training is done using the backpropagation algorithm.
+* MatConvNet  is a MATLAB toolbox implementing Convolutional Neural Networks (CNNs) for computer vision applications. It is simple, efficient, and can run and learn state-of-the-art CNNs
 
-DeepLearnToolBox is a matlab/octave toolbox for deep learning and includes Deep Belief Nets, Stacked Autoencoders, convolutional neural nets.
+#### CPP
 
-cuda-convnet is a fast C++/CUDA implementation of convolutional (or more generally, feed-forward) neural networks. It can model arbitrary layer connectivity and network depth. Any directed acyclic graph of layers will do. Training is done using the backpropagation algorithm.
+* eblearn is an open-source C++ library of machine learning by New York University’s machine learning lab, led by Yann LeCun. In particular, implementations of convolutional neural networks with energy-based models along with a GUI, demos and tutorials.
+* SINGA is designed to be general to implement the distributed training algorithms of existing systems. It is supported by Apache Software Foundation.
+* NVIDIA DIGITS is a new system for developing, training and visualizing deep neural networks. It puts the power of deep learning into an intuitive browser-based interface, so that data scientists and researchers can quickly design the best DNN for their data using real-time network behavior visualization.
+* Intel® Deep Learning Framework provides a unified framework for Intel® platforms accelerating Deep Convolutional Neural Networks.
 
-MatConvNet  is a MATLAB toolbox implementing Convolutional Neural Networks (CNNs) for computer vision applications. It is simple, efficient, and can run and learn state-of-the-art CNNs
+#### Java
 
-CPP
+* N-Dimensional Arrays for Java (ND4J)is scientific computing libraries for the JVM. They are meant to be used in production environments, which means routines are designed to run fast with minimum RAM requirements.
+* Deeplearning4j is the first commercial-grade, open-source, distributed deep-learning library written for Java and Scala. It is designed to be used in business environments, rather than as a research tool.
+* Encog is an advanced machine learning framework which supports Support Vector Machines,Artificial Neural Networks, Genetic Programming, Bayesian Networks, Hidden Markov Models, Genetic Programming and Genetic Algorithms are supported.
 
-eblearn is an open-source C++ library of machine learning by New York University’s machine learning lab, led by Yann LeCun. In particular, implementations of convolutional neural networks with energy-based models along with a GUI, demos and tutorials.
+#### JavaScript
 
-SINGA is designed to be general to implement the distributed training algorithms of existing systems. It is supported by Apache Software Foundation.
+* Convnet.js is a Javascript library for training Deep Learning models (mainly Neural Networks) entirely in a browser. No software requirements, no compilers, no installations, no GPUs, no sweat.
 
-NVIDIA DIGITS is a new system for developing, training and visualizing deep neural networks. It puts the power of deep learning into an intuitive browser-based interface, so that data scientists and researchers can quickly design the best DNN for their data using real-time network behavior visualization.
+#### Lua
 
-Intel® Deep Learning Framework provides a unified framework for Intel® platforms accelerating Deep Convolutional Neural Networks.
+* Torch is a scientific computing framework with wide support for machine learning algorithms. It is easy to use and efficient, fast scripting language, LuaJIT, and an underlying C/CUDA implementation. Torch is based on Lua programming language.
 
-Java
+#### Julia
 
-N-Dimensional Arrays for Java (ND4J)is scientific computing libraries for the JVM. They are meant to be used in production environments, which means routines are designed to run fast with minimum RAM requirements.
+* Mocha is a Deep Learning framework for Julia, inspired by the C++ framework Caffe. Efficient implementations of general stochastic gradient solvers and common layers in Mocha could be used to train deep / shallow (convolutional) neural networks, with (optional) unsupervised pre-training via (stacked) auto-encoders. Its best feature include Modular architecture, High-level Interface, portability with speed, compatibility and many more.
 
-Deeplearning4j is the first commercial-grade, open-source, distributed deep-learning library written for Java and Scala. It is designed to be used in business environments, rather than as a research tool.
+#### Lisp
 
-Encog is an advanced machine learning framework which supports Support Vector Machines,Artificial Neural Networks, Genetic Programming, Bayesian Networks, Hidden Markov Models, Genetic Programming and Genetic Algorithms are supported.
+* Lush(Lisp Universal Shell) is an object-oriented programming language designed for researchers, experimenters, and engineers interested in large-scale numerical and graphic applications. It comes with rich set of deep learning libraries as a part of machine learning libraries.
 
-JavaScript
+#### Haskell
 
-Convnet.js is a Javascript library for training Deep Learning models (mainly Neural Networks) entirely in a browser. No software requirements, no compilers, no installations, no GPUs, no sweat.
+* DNNGraph is a deep neural network model generation DSL in Haskell.
 
-Lua
+#### .NET
 
-Torch is a scientific computing framework with wide support for machine learning algorithms. It is easy to use and efficient, fast scripting language, LuaJIT, and an underlying C/CUDA implementation. Torch is based on Lua programming language.
+* Accord.NET is a .NET machine learning framework combined with audio and image processing libraries completely written in C#. It is a complete framework for building production-grade computer vision, computer audition, signal processing and statistics applications
+#### R
 
-Julia
-
-Mocha is a Deep Learning framework for Julia, inspired by the C++ framework Caffe. Efficient implementations of general stochastic gradient solvers and common layers in Mocha could be used to train deep / shallow (convolutional) neural networks, with (optional) unsupervised pre-training via (stacked) auto-encoders. Its best feature include Modular architecture, High-level Interface, portability with speed, compatibility and many more.
-
-Lisp
-
-Lush(Lisp Universal Shell) is an object-oriented programming language designed for researchers, experimenters, and engineers interested in large-scale numerical and graphic applications. It comes with rich set of deep learning libraries as a part of machine learning libraries.
-
-Haskell
-
-DNNGraph is a deep neural network model generation DSL in Haskell.
-
-.NET
-
-Accord.NET is a .NET machine learning framework combined with audio and image processing libraries completely written in C#. It is a complete framework for building production-grade computer vision, computer audition, signal processing and statistics applications
-R
-
-darch package can be used for generating neural networks with many layers (deep architectures). Training methods includes a pre training with the contrastive divergence method and a fine tuning with common known training algorithms like backpropagation or conjugate gradient.
-deepnet implements some deep learning architectures and neural network algorithms, including BP,RBM,DBN,Deep autoencoder and so on.
+* darch package can be used for generating neural networks with many layers (deep architectures). Training methods includes a pre training with the contrastive divergence method and a fine tuning with common known training algorithms like backpropagation or conjugate gradient.
+* deepnet implements some deep learning architectures and neural network algorithms, including BP,RBM,DBN,Deep autoencoder and so on.
