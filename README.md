@@ -2,10 +2,10 @@
 
 #### Python
 
-* [Theano] is a python library for defining and evaluating mathematical expressions with numerical arrays. It makes it easy to write deep learning algorithms in python. On the top of the Theano many more libraries are built.
-  * Keras is a minimalist, highly modular neural network library in the spirit of Torch, written in Python, that uses Theano under the hood for optimized tensor manipulation on GPU and CPU.
-  * Pylearn2 is a library that wraps a lot of models and training algorithms such as Stochastic Gradient Descent that are commonly used in Deep Learning. Its functional libraries are built on top of Theano.
-  * Lasagne is a lightweight library to build and train neural networks in Theano. It is governed by simplicity, transparency, modularity, pragmatism , focus and restraint principles.
+* `Theano <http://deeplearning.net/software/theano/>` is a python library for defining and evaluating mathematical expressions with numerical arrays. It makes it easy to write deep learning algorithms in python. On the top of the Theano many more libraries are built.
+  * [Keras](https://keras.io/) is a minimalist, highly modular neural network library in the spirit of Torch, written in Python, that uses Theano under the hood for optimized tensor manipulation on GPU and CPU.
+  * [Pylearn2](http://deeplearning.net/software/pylearn2/) is a library that wraps a lot of models and training algorithms such as Stochastic Gradient Descent that are commonly used in Deep Learning. Its functional libraries are built on top of Theano.
+  * [Lasagne] is a lightweight library to build and train neural networks in Theano. It is governed by simplicity, transparency, modularity, pragmatism , focus and restraint principles.
   * Blocks a framework that helps you build neural network models on top of Theano.
 * Caffe is a deep learning framework made with expression, speed, and modularity in mind. It is developed by the Berkeley Vision and Learning Center (BVLC) and by community contributors. Google's DeepDream is based on Caffe Framework. This framework is a BSD-licensed C++ library with Python Interface.
 * nolearn contains a number of wrappers and abstractions around existing neural network libraries, most notably Lasagne, along with a few machine learning utility modules.
