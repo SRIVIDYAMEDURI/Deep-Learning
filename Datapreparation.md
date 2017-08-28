@@ -7,3 +7,5 @@ The dataset used to ingest is from SIDKDD 2009 competition. The dataset consists
 
 ## 2.Setup
 1.	Begin the lab by creating a New Project by selecting the plus sign from Recent Projects.
+
+![New Project](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/New%20Project.png)
