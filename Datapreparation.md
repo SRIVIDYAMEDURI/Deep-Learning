@@ -1,8 +1,8 @@
-# Churn Prediction using Vienna - Data Preparation
+# Churn Prediction using AMLWorkbench - Data Preparation
 
 ## 1. Objectives
 
-The aim of this lab is to understand how Vienna’s Data Preparation tools (based on Pendleton) can be used to clean and ingest customer relationship data for churn analytics. 
+The aim of this lab is to understand how AMLWorkbench’s Data Preparation tools (based on Pendleton) can be used to clean and ingest customer relationship data for churn analytics. 
 The dataset used to ingest is from SIDKDD 2009 competition. The dataset consists of heterogeneous noisy data (numerical/categorical variables) from French Telecom company Orange and is anonymized.
 
 ## 2. Setup
@@ -17,7 +17,7 @@ The dataset used to ingest is from SIDKDD 2009 competition. The dataset consists
 
 ## 3. Data Source
 
-Data Preparation is part of the Vienna client experience and installed with it. Vienna desktop application, offers an intuitive and powerful ML-based data preparation experience (a.k.a. Project "Pendleton") built on the PROSE (PROgram Synthesis using Example) technology.
+Data Preparation is part of the AMLWorkbench client experience and installed with it. AMLWorkbench desktop application, offers an intuitive and powerful ML-based data preparation experience (a.k.a. Project "Pendleton") built on the PROSE (PROgram Synthesis using Example) technology.
 
 PROSE is a framework of technologies for programming by examples – automatic generation of programs from input-output examples at runtime. PROSE includes a pre-defined suite of technologies for various kinds of data wrangling – cleaning and pre-processing raw semi-structure data into a form amenable to analysis.
 
@@ -39,7 +39,7 @@ PROSE is a framework of technologies for programming by examples – automatic g
 
 ![Data Types](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/Data%20Types.png)
 
-5.	In the Sampling part of Add Data Source wizard, select sample: “Top 1000 (Active)” and leave all other options default. Vienna allows users to have multiple samples per data source. The Active indicator lets the user choose which sample to use when displaying the data source.
+5.	In the Sampling part of Add Data Source wizard, select sample: “Top 1000 (Active)” and leave all other options default. AMLWorkbench allows users to have multiple samples per data source. The Active indicator lets the user choose which sample to use when displaying the data source.
 
 ![Sampling part](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/Sampling%20part.png)
 
@@ -49,4 +49,20 @@ PROSE is a framework of technologies for programming by examples – automatic g
 
 ## 4. Data Cleansing
 
-1.	The concept of missing values is important to understand in order to successfully manage data.  If the missing values are not handled properly, the predictive models can be inaccurate. Handling missing values with Vienna is very simple. In this lab, we will replace the missing values with 0. Select the full dataset and then Transforms->Handle Missing Values to replace all missing values with 0.
+1.	The concept of missing values is important to understand in order to successfully manage data.  If the missing values are not handled properly, the predictive models can be inaccurate. Handling missing values with AMLWorkbench is very simple. In this lab, we will replace the missing values with 0. Select the full dataset and then Transforms->Handle Missing Values to replace all missing values with 0.
+
+![Handle Missing Values](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/Handle%20Missing%20Values.png)
+
+![Column Metrics](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/Column%20Metrics.png)
+
+2.	Select the full dataset and then Transforms->Remove Duplicates to eliminate duplicate copies of repeating data.
+
+![Remove Duplicates](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/Remove%20Duplicates.png)
+
+3.	We can get rid of year and month fields from our dataset as they intuitively do not make sense to include in our dataset. Select the year column first and then Transforms->Remove Column.
+
+![Remove Column](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/Remove%20Column.png)
+
+4.	After following all the above steps, the summary steps should look as follows. Note that in the Handle missing values step, all the column names are displayed as we want this to apply on the full dataset. Additionally, a .dprep file would be created which can be used to create a data frame (details in next lab).
+
+!(Steps](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/Steps.png)
