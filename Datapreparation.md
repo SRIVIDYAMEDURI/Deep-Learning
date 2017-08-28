@@ -47,3 +47,5 @@ PROSE is a framework of technologies for programming by examples – automatic g
 6.	Do not include path column in the Path Column part of Add Data Source wizard.
 
 ![Path Column Handling](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/Images/Path%20Column%20Handling.png)
+
+## 4. Data Cleansing
