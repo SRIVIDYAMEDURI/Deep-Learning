@@ -93,6 +93,7 @@ Two files are placed in a subfolder named output_<time_stamp>.
 For example, the two files are placed in the output_<time_stamp> as shown below:
 
 ![Azureworkbench](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/Azureworkbench.png)
+
 To create the real time web service, run the below command:
 
 az ml service create realtime -f output_<time_stamp>\main.py --model-file model.pkl -s output_<time_stamp>\service_schema.json -n churnapp -r scikit-py
