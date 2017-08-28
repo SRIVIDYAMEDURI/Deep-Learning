@@ -5,7 +5,12 @@
 The aim of this lab is to understand how Vienna’s Data Preparation tools (based on Pendleton) can be used to clean and ingest customer relationship data for churn analytics. 
 The dataset used to ingest is from SIDKDD 2009 competition. The dataset consists of heterogeneous noisy data (numerical/categorical variables) from French Telecom company Orange and is anonymized.
 
-## 2.Setup
+## 2. Setup
+
 1.	Begin the lab by creating a New Project by selecting the plus sign from Recent Projects.
 
 ![New Project](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/New%20Project.png)
+
+2.	Provide a project name, project directory and select a blank project template as next steps. For the project directory, create a new directory for churn analytics and copy the path to project directory in the wizard.
+
+![Project Name](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/Project%20Name.png)
