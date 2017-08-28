@@ -38,3 +38,15 @@ PROSE is a framework of technologies for programming by examples – automatic g
 4.	In the Data Types part of Add Data Source wizard, notice how all the numeric fields are shown with the Type: Number. If no type is specified, string is assumed. Hence, you do not need to add the type for all the categorical features.
 
 ![Data Types](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/Data%20Types.png)
+
+5.	In the Sampling part of Add Data Source wizard, select sample: “Top 1000 (Active)” and leave all other options default. Vienna allows users to have multiple samples per data source. The Active indicator lets the user choose which sample to use when displaying the data source.
+
+![Sampling part](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/Sampling%20part.png)
+
+6.	Do not include path column in the Path Column part of Add Data Source wizard.
+
+![Path Column](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/Path%20Column.png)
+
+## 4. Data Cleansing
+
+1.	The concept of missing values is important to understand in order to successfully manage data.  If the missing values are not handled properly, the predictive models can be inaccurate. Handling missing values with Vienna is very simple. In this lab, we will replace the missing values with 0. Select the full dataset and then Transforms->Handle Missing Values to replace all missing values with 0.
