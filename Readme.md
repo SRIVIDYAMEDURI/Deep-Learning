@@ -97,4 +97,16 @@ For example, the two files are placed in the output_<time_stamp> as shown below:
 To create the real time web service, run the below command:
 
 az ml service create realtime -f output_<time_stamp>\main.py --model-file model.pkl -s output_<time_stamp>\service_schema.json -n churnapp -r scikit-py
+
 ![AzureML_Service](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/AzureML_Service.png)
+
+The different az ml service create realtime command parameters are as follows:
+* -n: app name, must be lower case.
+* -f: scoring script file name
+* --model-file: model file, in this case it is the pickled sklearn model
+* -r: type of model, in this case it is the scikit-learn model
+The model and the scoring file are uploaded into an Azure service that we manage. As part of deployment process, the operationalization component uses the pickled model model.pkl and main.py to build a Docker image named <ACR_name>.azureacr.io/irisapp. It registers the image with your Azure Container Registry (ACR) service, pulls down that image locally to your computer, and starts a Docker container based on that image. As part of the deployment, an HTTP REST endpoint for the web service is created on your local machine.
+
+Run docker ps to see the churn image as shown below:
+
+![RunDocker](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/RunDocker.png)
