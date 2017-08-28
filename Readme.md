@@ -91,3 +91,5 @@ Two files are placed in a subfolder named output_<time_stamp>.
 * service_schema.json (this file contains the schema of the web service input)
 
 For example, the two files are placed in the output_<time_stamp> as shown below:
+
+![Azureworkbench](
