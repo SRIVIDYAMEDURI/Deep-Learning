@@ -28,3 +28,6 @@ def init():
     global model
     model = joblib.load('model.pkl')
 ```
+The run() function takes the input dataframe, input_df and performs one-hot encoding. Columns_encoded is the list of all columns after encoding from the modeling exercise and the encoded dataframe is passed to the model for prediction. Also, the three columns year, month and churn (class) are also deleted to be consistent with the preprocessing performed with the modeling.
+```
+
