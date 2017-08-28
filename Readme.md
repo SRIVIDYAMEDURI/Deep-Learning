@@ -110,3 +110,11 @@ The model and the scoring file are uploaded into an Azure service that we manage
 Run docker ps to see the churn image as shown below:
 
 ![RunDocker](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/RunDocker.png)
+
+To test the service, execute the returned service run command as follows:
+
+![TestService](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/TestService.png)
+
+# Exercise
+
+1.	Can you create a similar service for the Naïve Bayes model?
