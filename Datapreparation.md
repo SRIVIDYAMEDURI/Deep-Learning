@@ -40,3 +40,7 @@ PROSE is a framework of technologies for programming by examples – automatic g
 
 ![Data Types](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/Images/Data%20Types.png)
 
+5.	In the Sampling part of Add Data Source wizard, select sample: “Top 1000 (Active)” and leave all other options default. Vienna allows users to have multiple samples per data source. The Active indicator lets the user choose which sample to use when displaying the data source.
+
+![Sampling part](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/Images/Sampling%20part.png)
+
