@@ -1,6 +1,5 @@
-# Churn Prediction using AMLWorkbench
-# Operationalization
-# Objectives
+# Churn Prediction using AMLWorkbench - Operationalization
+## 1. Objectives
 The aim of this lab is to publish churn models and code as web services so that they can be consumed to produce business results.
 # Setup
 Local mode deployments run in docker containers on your local computer, whether that is your personal machine or a VM running on Azure. You can use local mode for development and testing.
