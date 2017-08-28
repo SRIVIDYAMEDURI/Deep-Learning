@@ -24,3 +24,7 @@ PROSE is a framework of technologies for programming by examples – automatic g
 1.	Select Data Sources and click the + sign to add Data Source.
 
 ![Add Data Source](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/Add%20Data%20Source.png)
+
+2.	In the Add Data Source wizard, select File and provide the path of the local file.
+
+![Local File](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/Local%20File.png)
