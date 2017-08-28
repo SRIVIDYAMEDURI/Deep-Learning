@@ -92,4 +92,4 @@ Two files are placed in a subfolder named output_<time_stamp>.
 
 For example, the two files are placed in the output_<time_stamp> as shown below:
 
-![Azureworkbench](
+![Azureworkbench](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/Azureworkbench.png)
