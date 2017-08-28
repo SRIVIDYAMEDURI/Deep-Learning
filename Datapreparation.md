@@ -36,5 +36,7 @@ PROSE is a framework of technologies for programming by examples – automatic g
 
 ![File Details](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/Images/File%20Details.png)
 
-4.	In the Data Types part of Add Data Source wizard, notice how all the numeric fields are shown with the Type: Number. If no type is specified, string is assumed. Hence, you do not need to add the type for all the categorical features.   
+4.	In the Data Types part of Add Data Source wizard, notice how all the numeric fields are shown with the Type: Number. If no type is specified, string is assumed. Hence, you do not need to add the type for all the categorical features.
+
+![Data Types](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/Images/Data%20Types.png)
 
