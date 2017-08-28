@@ -30,4 +30,63 @@ def init():
 ```
 The run() function takes the input dataframe, input_df and performs one-hot encoding. Columns_encoded is the list of all columns after encoding from the modeling exercise and the encoded dataframe is passed to the model for prediction. Also, the three columns year, month and churn (class) are also deleted to be consistent with the preprocessing performed with the modeling.
 ```
+def run(input_df):
+    import json
+    import pandas
 
+    input_df_encoded = input_df
+
+    input_df_encoded = input_df_encoded.drop('year', 1)
+    input_df_encoded = input_df_encoded.drop('month', 1)
+    input_df_encoded = input_df_encoded.drop('churn', 1)
+    
+    columns_encoded = ['age', 'annualincome', 'calldroprate', 'callfailurerate', 'callingnum',
+       'customerid', 'monthlybilledamount', 'numberofcomplaints',
+       'numberofmonthunpaid', 'numdayscontractequipmentplanexpiring',
+       'penaltytoswitch', 'totalminsusedinlastmonth', 'unpaidbalance',
+       'percentagecalloutsidenetwork', 'totalcallduration', 'avgcallduration',
+       'churn', 'customersuspended_No', 'customersuspended_Yes',
+       'education_Bachelor or equivalent', 'education_High School or below',
+       'education_Master or equivalent', 'education_PhD or equivalent',
+       'gender_Female', 'gender_Male', 'homeowner_No', 'homeowner_Yes',
+       'maritalstatus_Married', 'maritalstatus_Single', 'noadditionallines_\\N',
+       'occupation_Non-technology Related Job', 'occupation_Others',
+       'occupation_Technology Related Job', 'state_AK', 'state_AL', 'state_AR',
+       'state_AZ', 'state_CA', 'state_CO', 'state_CT', 'state_DE', 'state_FL',
+       'state_GA', 'state_HI', 'state_IA', 'state_ID', 'state_IL', 'state_IN',
+       'state_KS', 'state_KY', 'state_LA', 'state_MA', 'state_MD', 'state_ME',
+       'state_MI', 'state_MN', 'state_MO', 'state_MS', 'state_MT', 'state_NC',
+       'state_ND', 'state_NE', 'state_NH', 'state_NJ', 'state_NM', 'state_NV',
+       'state_NY', 'state_OH', 'state_OK', 'state_OR', 'state_PA', 'state_RI',
+       'state_SC', 'state_SD', 'state_TN', 'state_TX', 'state_UT', 'state_VA',
+       'state_VT', 'state_WA', 'state_WI', 'state_WV', 'state_WY',
+       'usesinternetservice_No', 'usesinternetservice_Yes',
+       'usesvoiceservice_No', 'usesvoiceservice_Yes']
+    
+    for column_encoded in columns_encoded:
+        if not column_encoded in input_df.columns:
+            input_df_encoded[column_encoded] = 0
+
+    columns_to_encode = ['customersuspended', 'education', 'gender', 'homeowner', 'maritalstatus', 'noadditionallines', 'occupation', 'state', 'usesinternetservice', 'usesvoiceservice']
+    for column_to_encode in columns_to_encode:
+        dummies = pandas.get_dummies(input_df[column_to_encode])
+        one_hot_col_names = []
+        for col_name in list(dummies.columns):
+            one_hot_col_names.append(column_to_encode + '_' + col_name)
+            input_df_encoded[column_to_encode + '_' + col_name] = 1
+        input_df_encoded = input_df_encoded.drop(column_to_encode, 1)
+    
+    pred = model.predict(input_df_encoded)
+    return json.dumps(str(pred[0]))
+```
+# Realtime Web Service
+To deploy the web service, you must have a model, a scoring script, and optionally a schema for the web service input data. The scoring script loads the model.pkl file from the current folder and uses it to produce a new predicted class. The input to the model is encoded features.
+
+To generate the scoring and schema files, simply execute the churn_schema_gen.py file that comes with the sample project in the AMLWorkbench CLI command prompt using Python interpreter directly.
+
+python churn_schema_gen.py
+
+Two files are placed in a subfolder named output_<time_stamp>.
+* main.py (this file is the scoring script)
+* service_schema.json (this file contains the schema of the web service input)
+For example, the two files are placed in the output_<time_stamp> as shown below:
