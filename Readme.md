@@ -20,7 +20,8 @@ az ml env local
 # Scoring and Schema Files
 Open churn_schema_gen.py to investigate the code. Churn_schema_gen.py is responsible for generating the scoring and schema files necessary to operationalize Churn Prediction. Prepare the web service definition by authoring init() and run() functions.
 The init() function loads the model (model.pkl) as shown below:
-```def init():
+```
+def init():
     from sklearn.externals import joblib
 
     # load the model file
