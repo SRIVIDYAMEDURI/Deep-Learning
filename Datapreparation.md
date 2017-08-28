@@ -62,8 +62,10 @@ PROSE is a framework of technologies for programming by examples – automatic g
 
 3.	We can get rid of year and month fields from our dataset as they intuitively do not make sense to include in our dataset. Select the year column first and then Transforms->Remove Column.
 
+Similarly, remove the month column.
+
 ![Remove Column](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/Remove%20Column.png)
 
 4.	After following all the above steps, the summary steps should look as follows. Note that in the Handle missing values step, all the column names are displayed as we want this to apply on the full dataset. Additionally, a .dprep file would be created which can be used to create a data frame (details in next lab).
 
-!(Steps](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/Steps.png)
+![Steps](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/Steps.png)
