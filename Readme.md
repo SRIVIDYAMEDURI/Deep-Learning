@@ -1,22 +1,28 @@
 # Churn Prediction using AMLWorkbench - Operationalization
 ## 1. Objectives
 The aim of this lab is to publish churn models and code as web services so that they can be consumed to produce business results.
-# Setup
+## 2. Setup
 Local mode deployments run in docker containers on your local computer, whether that is your personal machine or a VM running on Azure. You can use local mode for development and testing.
 To prepare the operationalization environment, in the CLI window type the following to set up the environment for local operationalization:
 
+```
 az ml env setup
+```
 
 Follow the instructions to provision an Azure Container Registry (ACR) instance and a storage account in which to store the Docker image we are about to create. When finished, a file named .amlenvrc.cmd is created in your home directory (usually C:\Users<username>) which contains then names and credentials of the ACR and storage account.
 
 To set the environment variables required for operationalization, simply execute the .amlenvrc.cmd file from the command line.
 
+```
 c:\Users\<username>\.amlenvrc.cmd
+```
 
 To verify that you have properly configured your operationalization environment for local web service deployment, enter the following command:
 
+```
 az ml env local
-# Scoring and Schema Files
+```
+## 3. Scoring and Schema Files
 Open churn_schema_gen.py to investigate the code. Churn_schema_gen.py is responsible for generating the scoring and schema files necessary to operationalize Churn Prediction. Prepare the web service definition by authoring init() and run() functions.
 The init() function loads the model (model.pkl) as shown below:
 ```
@@ -78,12 +84,14 @@ def run(input_df):
     pred = model.predict(input_df_encoded)
     return json.dumps(str(pred[0]))
 ```
-# Realtime Web Service
+## 4. Realtime Web Service
 To deploy the web service, you must have a model, a scoring script, and optionally a schema for the web service input data. The scoring script loads the model.pkl file from the current folder and uses it to produce a new predicted class. The input to the model is encoded features.
 
 To generate the scoring and schema files, simply execute the churn_schema_gen.py file that comes with the sample project in the AMLWorkbench CLI command prompt using Python interpreter directly.
 
+```
 python churn_schema_gen.py
+```
 
 Two files are placed in a subfolder named output_<time_stamp>.
 * main.py (this file is the scoring script)
@@ -95,7 +103,9 @@ For example, the two files are placed in the output_<time_stamp> as shown below:
 
 To create the real time web service, run the below command:
 
+```
 az ml service create realtime -f output_<time_stamp>\main.py --model-file model.pkl -s output_<time_stamp>\service_schema.json -n churnapp -r scikit-py
+```
 
 ![AzureML_Service](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/AzureML_Service.png)
 
@@ -114,6 +124,6 @@ To test the service, execute the returned service run command as follows:
 
 ![TestService](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/TestService.png)
 
-# Exercise
+## 5. Exercise
 
 1.	Can you create a similar service for the Naïve Bayes model?
