@@ -51,4 +51,5 @@ PROSE is a framework of technologies for programming by examples – automatic g
 ## 4. Data Cleansing
 
 1.	The concept of missing values is important to understand in order to successfully manage data.  If the missing values are not handled properly, the predictive models can be inaccurate. Handling missing values with Vienna is very simple. In this lab, we will replace the missing values with 0. Select the full dataset and then Transforms->Handle Missing Values to replace all missing values with 0.
+
 ![Handle Missing Values](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/Images/Handle%20Missing%20Values.png)
