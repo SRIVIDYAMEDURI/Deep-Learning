@@ -61,8 +61,8 @@ PROSE is a framework of technologies for programming by examples – automatic g
 ![Remove Duplicates](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/Images/Remove%20Duplicates.png)
 
 3.	We can get rid of year and month fields from our dataset as they intuitively do not make sense to include in our dataset. Select the year column first and then Transforms->Remove Column.
-  
-  Similarly, remove the month column.
+
+Similarly, remove the month column.
 
 ![Remove Column](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/Images/Remove%20Column.png)
 
