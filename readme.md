@@ -17,6 +17,7 @@ C:\Temp\Iris> az ml notebook
 This will start the notebook server and display a URL you can use to connect from any web browser on your machine (by default this is http://localhost:8888). Additionally, it also launches Jupyter web UI from this address using your default browser automatically as shown below. Create a new notebook as shown below.
 
 ![Jupyterweb](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/Images/JupyterWeb.png)
+
 ![RenameNotebook](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/Images/RenameNotebook.png)
 
 You will also notice a notebook file (.pynb) created in Notebooks tab of AMLWorkbench as shown below. Run the code from CATelcoCustomerChurnModeling.py via notebook. Alternatively, you can also open ChurnAnalytics.ipynb that contains markdown comments to run the code in the notebook.
