@@ -23,9 +23,9 @@ Ensure conda_dependencies.yml contains dependencies as follows:
 
 dependencies:
 
-  \-python=3.5.2
+  \- python=3.5.2
   
-  -ipykernel=4.6.1
+  \- ipykernel=4.6.1
   
   -pip:
   
