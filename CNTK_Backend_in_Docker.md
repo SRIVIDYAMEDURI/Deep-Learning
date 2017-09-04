@@ -29,17 +29,17 @@ dependencies:
   
   \- pip:
   
-    \- azure-ml-api-sdk==0.1.0a6
+  \- azure-ml-api-sdk==0.1.0a6
     
-    \- keras
+   \- keras
     
-    \- scikit-learn
+   \- scikit-learn
     
-    \- pandas
+   \- pandas
     
-    \- tensorflow
+   \- tensorflow
     
-    \- h5py
+   \- h5py
     
 If you have a Docker engine running locally, in the CLI window, run the below command. Note the change the run configuration from local to docker.
 
