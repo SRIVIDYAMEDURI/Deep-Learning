@@ -22,7 +22,7 @@ Rest of the code related to modeling is pretty much the same as in the previous 
 Ensure conda_dependencies.yml contains dependencies as follows:
 dependencies:
 
-  * - python=3.5.2
+  \-python=3.5.2
   
   -ipykernel=4.6.1
   
