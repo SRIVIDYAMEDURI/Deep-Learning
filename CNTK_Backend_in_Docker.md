@@ -21,17 +21,17 @@ Rest of the code related to modeling is pretty much the same as in the previous 
 
 Ensure conda_dependencies.yml contains dependencies as follows:
 dependencies:
-  * python=3.5.2
-  * ipykernel is required to use the remote/docker kernels in Jupyter Notebook.
-  * ipykernel=4.6.1
+  - python=3.5.2
+  - ipykernel is required to use the remote/docker kernels in Jupyter Notebook.
+    * ipykernel=4.6.1
   - pip:
     * This is the operationalization API for Azure Machine Learning. Details:
     * https://github.com/Azure/Machine-Learning-Operationalization
-    - azure-ml-api-sdk==0.1.0a6
-    - keras
-    - scikit-learn
-    - pandas
-    - tensorflow
+    * azure-ml-api-sdk==0.1.0a6
+    * keras
+    * scikit-learn
+    * pandas
+    * tensorflow
     
 If you have a Docker engine running locally, in the CLI window, run the below command. Note the change the run configuration from local to docker.
 
@@ -45,4 +45,4 @@ This command pulls down a base docker image, layers a conda environment on the b
 
 It then executes your script. You should see some Docker image construction messages in the CLI window. In the end, on successful execution, you will see result as shown below.
 
-![CLIWindow_Docker()
+![CLIWindow_Docker]()
