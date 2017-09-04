@@ -23,13 +23,13 @@ Ensure conda_dependencies.yml contains dependencies as follows:
 dependencies:
   * -python=3.5.2
   * -ipykernel=4.6.1
-  - pip:
-    - azure-ml-api-sdk==0.1.0a6
-    - keras
-    - scikit-learn
-    - pandas
-    - tensorflow
-    - h5py
+  * -pip:
+    * -azure-ml-api-sdk==0.1.0a6
+    * -keras
+    * -scikit-learn
+    * -pandas
+    * -tensorflow
+    * -h5py
     
 If you have a Docker engine running locally, in the CLI window, run the below command. Note the change the run configuration from local to docker.
 
