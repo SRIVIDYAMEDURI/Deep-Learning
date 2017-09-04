@@ -21,9 +21,9 @@ Rest of the code related to modeling is pretty much the same as in the previous 
 
 Ensure conda_dependencies.yml contains dependencies as follows:
 dependencies:
-  - python=3.5.2
+  * python=3.5.2
   * ipykernel is required to use the remote/docker kernels in Jupyter Notebook.
-  - ipykernel=4.6.1
+  * ipykernel=4.6.1
   - pip:
     * This is the operationalization API for Azure Machine Learning. Details:
     * https://github.com/Azure/Machine-Learning-Operationalization
