@@ -20,6 +20,7 @@ Rest of the code related to modeling is pretty much the same as in the previous 
 3. Execution – Local Docker Container
 
 Ensure conda_dependencies.yml contains dependencies as follows:
+
 dependencies:
 
   \-python=3.5.2
