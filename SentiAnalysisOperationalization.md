@@ -6,7 +6,7 @@ The aim of this lab is to publish the sentiment analysis model (hd5) and code as
 
 Launch a Data Science Virtual Machine (Ubuntu) from portal.azure.com as shown below. Follow the steps to create the virtual machine on selection and ssh into the machine.
 
-![DataScienceVirtualMachine]()
+![DataScienceVirtualMachine](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/Images/DataScienceVirtualMachine.png)
 
 Pip is a better alternative to Easy Install for installing Python packages. To install pip on ubuntu run the bellow command:
 ```
