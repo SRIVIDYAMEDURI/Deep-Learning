@@ -70,7 +70,7 @@ Note that we have removed ipykernel as we will not be needing it. The following 
 az ml image create -n ads1 -v -c conda_dependencies.yml -m sentModel.h5 -s myschema.json -f senti_schema.py -r python
 ```
 
-![PuttyImage]()
+![PuttyImage](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/Images/PuttyImage.png)
 
 You will find the image id displayed when you create the image. Use the image id in the next command to specify the image to use. 
 
@@ -102,7 +102,7 @@ az ml service create realtime -n sentiservice –-image-id 9bebf880-dc0d-4b2c-9e
 ```
 An example of a successful run of az ml service create looks as follows. In addition, you can also  docker ps to view the container.
 
-![DockerPs]()
+![DockerPs](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/Images/DockerPs.png)
 
 Run the service (sentiservice) created using az ml service run. Note the review text created and passed to call the web service.
 
@@ -110,7 +110,7 @@ Run the service (sentiservice) created using az ml service run. Note the review 
 az ml service run realtime -i sentiservice -d "{\"input_df\": [{\"reviewText\": \"The movie was great. I liked it\"}]}"
 ```
 
-![Sentiservice]()
+![Sentiservice](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/Images/Sentiservice.png)
 
 The model built was on a very small dataset. Hence, you will find the sentiment scores are not very robust. In comparison, the IMDB Movie reviews sentiment classification problem (https://keras.io/datasets/#datasets ) from keras consists of a dataset of 25,000 movies reviews from IMDB, labeled by sentiment (positive/negative). The intention of this lab was to show you how to perform sentiment analysis using Deep Learning with AMLWorkbench.
 
