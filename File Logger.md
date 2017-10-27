@@ -115,7 +115,7 @@ In certain scenarios, it would be desirable to perform modeling on selective mes
 
 One can always capture all the chat messages and perform filtering to mine selective messages. However, having the flexibility to selectively log can be useful and the Microsoft Bot Framework allows this. To selectively log messages from the users, you can investigate the activity json and filter on "name". For example, in the json below, the message was sent by "Bot1".
 
-````
+```json
 {
   "type": "message",
   "timestamp": "2017-10-27T11:19:15.2025869Z",
@@ -142,4 +142,4 @@ One can always capture all the chat messages and perform filtering to mine selec
   "entities": [],
   "replyToId": "09df56eecd28457b87bba3e67f173b84"
 }
-````
+```
