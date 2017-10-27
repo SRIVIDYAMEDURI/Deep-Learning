@@ -23,7 +23,7 @@ public class DebugActivityLogger : IActivityLogger
 A more efficient way of logging to a file is to use the Global.asax file and use the events related to the lifecycle of the bot. Extend the global.asax as shown in the code snippet below. Change the below line to a path that exists in your environment.
 
 ````C# 
-tw = new StreamWriter("C:\\Users\\username\\log.txt", true)
+tw = new StreamWriter("C:\\Users\\username\\log.txt", true);
 ````
 
 Application_Start opens a StreamWriter that implements a Stream wrapper that writes characters to a stream in a particular encoding. This lasts for the life of the bot and we can now just write to it as opposed to opening and closing the file for each message. It is also worth noting that the StreamWriter is now sent as a parameter to DebugActivityLogger. The log file can be closed in Application_End which is Called once per lifetime of the application before the application is unloaded.
