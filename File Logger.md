@@ -96,6 +96,7 @@ Investigate the log file specified in the line ````tw = new StreamWriter("C:\\Us
 To view the log messages from the user and the bot. The messages should appear as follows:
 
 ````From:2c1c7fa3 - To:56800324 - Message:a log message````
+
 ````From:56800324 - To:2c1c7fa3 - Message:You sent a log message which was 13 characters````
 
 
