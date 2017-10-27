@@ -95,7 +95,7 @@ namespace MiddlewareBot
 }
 ````
 
-4.	Log file
+## 4. Log file
 
 Investigate the log file specified in the line
 
@@ -109,4 +109,37 @@ To view the log messages from the user and the bot. The messages should appear a
 
 ````From:56800324 - To:2c1c7fa3 - Message:You sent a log message which was 13 characters````
 
+## 5. Selective Logging
 
+In certain scenarios, it would be desirable to perform modeling on selective messages or selectively log. There are many such examples: a) A very active community bot can potentially capture a tsunami of chat messages very quickly and a lot of the chat messages may not be very useful. b) There may also be a need to selectively log to focus on certain users/bot or messages related to a particular trending product category/topic.
+
+One can always capture all the chat messages and perform filtering to mine selective messages. However, having the flexibility to selectively log can be useful and the Microsoft Bot Framework allows this. To selectively log messages from the users, you can investigate the activity json and filter on “name”. For example, in the json below, the message was sent by “Bot1”.
+
+````
+{
+  "type": "message",
+  "timestamp": "2017-10-27T11:19:15.2025869Z",
+  "localTimestamp": "2017-10-27T07:19:15.2140891-04:00",
+  "serviceUrl": "http://localhost:9000/",
+  "channelId": "emulator",
+  "from": {
+    "id": "56800324",
+    "name": "Bot1"
+  },
+  "conversation": {
+    "isGroup": false,
+    "id": "8a684db8",
+    "name": "Conv1"
+  },
+  "recipient": {
+    "id": "2c1c7fa3",
+    "name": "User1"
+  },
+  "membersAdded": [],
+  "membersRemoved": [],
+  "text": "You sent hi which was 2 characters",
+  "attachments": [],
+  "entities": [],
+  "replyToId": "09df56eecd28457b87bba3e67f173b84"
+}
+````
