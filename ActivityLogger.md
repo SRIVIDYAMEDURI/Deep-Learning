@@ -8,7 +8,7 @@ This lab is aimed at getting started with logging using the Microsoft Bot Framew
 
 Import the core-Middleware code from https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/core-Middleware in Visual Studio. The easiest way to perform this is opening core-Middleware.sln. The solution explorer would look as follows in Visual Studio:
 
-![Solution Explorer]()
+![Solution Explorer](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/Solution%20Explorer.png)
 
 ## 3.	IActivityLogger
 
@@ -43,5 +43,5 @@ protected void Application_Start()
 
 Run the bot application and test in the emulator with messages. The log data is written using Debug.WriteLine. You can view the result using Output window. Ensure Debug is selected for Show output from. If Output is not visible, select View->Output from the menu. You will see an entry such as From:56800324 - To:2c1c7fa3 - Message:hello. Since this is an echo bot, you will also see the echoed message logged.
 
-![Log Results]
+![Log Results](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/Log%20Results.png)
 
