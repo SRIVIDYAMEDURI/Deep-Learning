@@ -25,7 +25,7 @@ public class DebugActivityLogger : IActivityLogger
 ````
 The logging activity is an event that takes place for the lifetime of the bot application. Application_Start method is called when the application starts and lasts for the lifetime of the application.
 
-Global.asax allows us to write event handlers that react to global events. Global.asax events are never called directly by the user. They are called automatically in response to application events. For this lab, we must register DebugActivityLogger in Application_Start (in Global.asax) as follows.
+Global.asax allows us to write event handlers that react to important life-cycle events. Global.asax events are never called directly by the user. They are called automatically in response to application events. For this lab, we must register DebugActivityLogger in Application_Start (in Global.asax) as follows.
 
 ````C#
 protected void Application_Start()
@@ -37,6 +37,9 @@ protected void Application_Start()
     GlobalConfiguration.Configure(WebApiConfig.Register);
 }
 ````
+
+The Application_Start method is called only one time during the life cycle of an application. You can use this method to perform startup tasks.
+
 ## 4. Log Results
 
 Run the bot application and test in the emulator with messages. The log data is written using Debug.WriteLine. You can view the result using Output window. Ensure Debug is selected for *Show output from*. If Output is not visible, select View->Output from the menu. You will see an entry such as ````From:56800324 - To:2c1c7fa3 - Message:hello````. Since this is an echo bot, you will also see the echoed message logged.
