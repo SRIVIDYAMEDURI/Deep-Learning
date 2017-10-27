@@ -30,14 +30,13 @@ Global.asax allows us to write event handlers that react to global events. Globa
 
 ````C#
 protected void Application_Start()
-        {
-            Conversation.UpdateContainer(builder =>
-            {
-                builder.RegisterType<DebugActivityLogger>().AsImplementedInterfaces().InstancePerDependency();
-            });
-
-            GlobalConfiguration.Configure(WebApiConfig.Register);
-        }
+{
+    Conversation.UpdateContainer(builder =>
+    {
+        builder.RegisterType<DebugActivityLogger>().AsImplementedInterfaces().InstancePerDependency();
+    });
+    GlobalConfiguration.Configure(WebApiConfig.Register);
+}
 ````
 ## 4. Log Results
 
