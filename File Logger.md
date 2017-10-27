@@ -143,7 +143,7 @@ One can always capture all the chat messages and perform filtering to mine selec
   "replyToId": "09df56eecd28457b87bba3e67f173b84"
 }
 ```
-Can you change the LogAsync to filter on user messages only? You can do that with a simple condition to check activity.From.Name property:
+Can you change the LogAsync to filter on user messages only? You can do that with a simple condition to check ````activity.From.Name```` property:
 
 ````C#
 public class DebugActivityLogger : IActivityLogger
