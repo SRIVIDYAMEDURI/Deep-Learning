@@ -93,6 +93,7 @@ namespace MiddlewareBot
 4.	Log file
 
 Investigate the log file specified in the line ````tw = new StreamWriter("C:\\Users\\username\\log.txt", true);````
+
 To view the log messages from the user and the bot. The messages should appear as follows:
 
 ````From:2c1c7fa3 - To:56800324 - Message:a log message````
