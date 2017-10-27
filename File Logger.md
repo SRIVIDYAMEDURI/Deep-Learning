@@ -20,7 +20,7 @@ public class DebugActivityLogger : IActivityLogger
 
 ## 3.	An efficient way of logging
 
-A more efficient way of logging to a file is to use the Global.asax file and use the events related to the lifecycle of the bot. Extend the global.asax as shown in the code snippet below. ````Change tw = new StreamWriter("C:\\Users\\username\\log.txt", true)```` to a path that exists in your environment.
+A more efficient way of logging to a file is to use the Global.asax file and use the events related to the lifecycle of the bot. Extend the global.asax as shown in the code snippet below. Change ````C# tw = new StreamWriter("C:\\Users\\username\\log.txt", true)```` to a path that exists in your environment.
 
 Application_Start opens a StreamWriter that implements a Stream wrapper that writes characters to a stream in a particular encoding. This lasts for the life of the bot and we can now just write to it as opposed to opening and closing the file for each message. It is also worth noting that the StreamWriter is now sent as a parameter to DebugActivityLogger. The log file can be closed in Application_End which is Called once per lifetime of the application before the application is unloaded.
 
@@ -92,7 +92,7 @@ namespace MiddlewareBot
 
 4.	Log file
 
-Investigate the log file specified in the line ````tw = new StreamWriter("C:\\Users\\username\\log.txt", true);````
+Investigate the log file specified in the line ````C# tw = new StreamWriter("C:\\Users\\username\\log.txt", true);````
 
 To view the log messages from the user and the bot. The messages should appear as follows:
 
