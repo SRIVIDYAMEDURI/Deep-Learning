@@ -60,7 +60,7 @@ namespace MiddlewareBot
 }
 ````
 
-Change the DebugActivityLogger now to receive the file parameter in the constructor and update LogAsync to write to the log file now by adding
+Change the DebugActivityLogger now to receive the file parameter in the constructor and update LogAsync to write to the log file now by adding the below lines.
 
 ````C#
 tw.WriteLine($"From:{activiy.From.Id} - To:{activiy.Recipient.Id} - Message:{activiy.AsMessageActivity().Text}", true);
