@@ -22,9 +22,8 @@ public class DebugActivityLogger : IActivityLogger
         Debug.WriteLine($"From:{activity.From.Id} - To:{activity.Recipient.Id} - Message:{activity.AsMessageActivity().Text}");
     }
 }
-
 ````
-The logging activity is an event that takes place for the lifetime of the bot application. Application_Start method is called when the application starts and lasts for the lifetime of the application.
+The logging activity is an event that takes place for the lifetime of the bot application. *Application_Start* method is called when the application starts and lasts for the lifetime of the application.
 
 Global.asax allows us to write event handlers that react to global events. Global.asax events are never called directly by the user. They are called automatically in response to application events. For this lab, we must register DebugActivityLogger in Application_Start (in Global.asax) as follows.
 
