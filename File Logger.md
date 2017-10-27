@@ -113,7 +113,7 @@ To view the log messages from the user and the bot. The messages should appear a
 
 In certain scenarios, it would be desirable to perform modeling on selective messages or selectively log. There are many such examples: a) A very active community bot can potentially capture a tsunami of chat messages very quickly and a lot of the chat messages may not be very useful. b) There may also be a need to selectively log to focus on certain users/bot or messages related to a particular trending product category/topic.
 
-One can always capture all the chat messages and perform filtering to mine selective messages. However, having the flexibility to selectively log can be useful and the Microsoft Bot Framework allows this. To selectively log messages from the users, you can investigate the activity json and filter on "name". For example, in the json below, the message was sent by "Bot1".
+One can always capture all the chat messages and perform filtering to mine selective messages. However, having the flexibility to selectively log can be useful and the Microsoft Bot Framework allows this. To selectively log messages from the users, you can investigate the activity json and filter on “name”. For example, in the json below, the message was sent by “Bot1”.
 
 ```json
 {
@@ -143,3 +143,17 @@ One can always capture all the chat messages and perform filtering to mine selec
   "replyToId": "09df56eecd28457b87bba3e67f173b84"
 }
 ```
+Can you change the LogAsync to filter on user messages only? You can do that with a simple condition to check activity.From.Name property:
+
+````C#
+public class DebugActivityLogger : IActivityLogger
+{
+        public async Task LogAsync(IActivity activity)
+        {
+           if (!activity.From.Name.Contains("Bot"))
+            {
+               Debug.WriteLine($"From:{activity.From.Id} - To:{activity.Recipient.Id} - Message:{activity.AsMessageActivity()?.Text}");
+            }
+        }
+}
+````
