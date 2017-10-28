@@ -12,7 +12,7 @@ The aim of this lab is to log chat conversations to Azure SQL database. This lab
 
 2.2 Select Show database connection strings from the Overview tab and make a note of the connection string as we will be using it later in the lab.
 
-![Botlog Connection Strings](images/BotlogConnectionStrings)
+![Connection Strings](images/ConnectionStrings)
 
 2.3 Change your firewall settings to capture your ip address. You may have already done this if you followed the steps from Create DB – Portal (https://docs.microsoft.com/en-us/azure/sql-database/sql-database-get-started-portal)
 
