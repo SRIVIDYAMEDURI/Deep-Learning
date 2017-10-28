@@ -6,7 +6,7 @@ The aim of this lab is to log chat conversations to Azure SQL database. This lab
 
 ## 2.	Setup/Pre-requisites
 
-#### 2.1	Since we will be writing to a SQL database, either we can use a database that you may already have or create a new one. To create a new one, go to the azure portal and follow the ![Create DB – Portal](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-get-started-portal) steps to create a database called Botlog as shown below.
+#### 2.1	Since we will be writing to a SQL database, either we can use a database that you may already have or create a new one. To create a new one, go to the azure portal and follow the [Create DB – Portal](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-get-started-portal) steps to create a database called Botlog as shown below.
 
 ![Botlog](images/Bot log.png)
 
@@ -14,7 +14,7 @@ The aim of this lab is to log chat conversations to Azure SQL database. This lab
 
 ![Connection Strings](images/Connection Strings.png)
 
-#### 2.3 Change your firewall settings to capture your ip address. You may have already done this if you followed the steps from ![Create DB – Portal](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-get-started-portal)
+#### 2.3 Change your firewall settings to capture your ip address. You may have already done this if you followed the steps from [Create DB – Portal](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-get-started-portal)
 
 ![Firewall Settings](images/Firewall Settings.png)
 
