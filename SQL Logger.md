@@ -16,7 +16,7 @@ The aim of this lab is to log chat conversations to Azure SQL database. This lab
 
 2.3. Change your firewall settings to capture your ip address. You may have already done this if you followed the steps from [Create DB – Portal](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-get-started-portal)
 
-![Firewall Settings](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/Firewall%20Settings.png)
+![Query Editor](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/QueryEditor.png)
 
 2.4. Create a new table called userChatLog with the below create table statement (or schema):
 
