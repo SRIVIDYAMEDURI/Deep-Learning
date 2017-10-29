@@ -26,7 +26,7 @@ CREATE TABLE userChatLog(id int IDENTITY(1, 1),fromId varchar(25),toId varchar(2
 
 2.5.   Import the code from sql-core-Middleware into Visual Studio. The easiest way to do this is by clicking on the solution sql-core-Middleware.sln.
 
-## 3.	SQL Logging
+## 3.  SQL Logging
 
 The framework is very much the same as what was used in the previous labs. In short, we will use the Global.asax's global events to setup our logging. The ideal way of doing this is to initiate the connection to SQL server via Application_Start, pass the connection object to LogAsync method for storing chat messages and close the connection via Application_End.
 
@@ -94,14 +94,14 @@ public class SqlActivityLogger : IActivityLogger
         }
     }
 ````
-## 4. SQL Query Results
+## 4.  SQL Query Results
 
 Run the project from visual studio and open the bot emulator. Begin to send messages to your bot to test the SQL logging functionality.
 
-![Bot Emulator](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/BotEmulator.png)
+![Bot Emulator](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/BotEmulator1.png)
 
 From the database page of the portal, select Tools -> Query editor (preview) to preview log messages stored in the table. Login to run any queries.
-This is a quick way to see results but is not the only of doing it. Feel free to use any SQL client to perform query operations. Run the query ````Select * from userChatLog```` to view chat inserts into the table userChatLog. In the below example, the message "My Beautiful Los Angeles" sent via the bot emulator is logged along with the ids.
+This is a quick way to see results but is not the only of doing it. Feel free to use any SQL client to perform query operations. Run the query ````Select * from userChatLog```` to view chat inserts into the table userChatLog. In the below example, the message ````My Beautiful Los Angeles```` sent via the bot emulator is logged along with the ids.
 
 ![Query Editor](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/QueryEditor1.png)
 
