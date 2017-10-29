@@ -8,15 +8,15 @@ The aim of this lab is to log chat conversations to Azure SQL database. This lab
 
 2.1.   Since we will be writing to a SQL database, either we can use a database that you may already have or create a new one. To create a new one, go to the azure portal and follow the [Create DB – Portal](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-get-started-portal) steps to create a database called Botlog as shown below.
 
-![Botlog](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/Bot_Log2.png)
+![Botlog](images/Bot_Log2.png)
 
 2.2.   Select Show database connection strings from the Overview tab and make a note of the connection string as we will be using it later in the lab.
 
-![Connection Strings](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/Connection_Strings4.png)
+![Connection Strings](images/Connection_Strings4.png)
 
 2.3.   Change your firewall settings to capture your ip address. You may have already done this if you followed the steps from [Create DB – Portal](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-get-started-portal)
 
-![Firewall Settings](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/Firewall_Settings3.png)
+![Firewall Settings](images/Firewall_Settings3.png)
 
 2.4.   Create a new table called userChatLog with the below create table statement (or schema):
 
@@ -98,11 +98,11 @@ public class SqlActivityLogger : IActivityLogger
 
 Run the project from visual studio and open the bot emulator. Begin to send messages to your bot to test the SQL logging functionality.
 
-![Bot Emulator](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/BotEmulator1.png)
+![Bot Emulator](images/BotEmulator1.png)
 
 From the database page of the portal, select Tools -> Query editor (preview) to preview log messages stored in the table. Login to run any queries.
 This is a quick way to see results but is not the only of doing it. Feel free to use any SQL client to perform query operations. Run the query ````Select * from userChatLog```` to view chat inserts into the table userChatLog. In the below example, the message ````My Beautiful Los Angeles```` sent via the bot emulator is logged along with the ids.
 
-![Query Editor](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/QueryEditor1.png)
+![Query Editor](images/QueryEditor1.png)
 
 
