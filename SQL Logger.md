@@ -30,7 +30,7 @@ CREATE TABLE userChatLog(id int IDENTITY(1, 1),fromId varchar(25),toId varchar(2
 
 The framework is very much the same as what was used in the previous labs. In short, we will use the Global.asax's global events to setup our logging. The ideal way of doing this is to initiate the connection to SQL server via Application_Start, pass the connection object to LogAsync method for storing chat messages and close the connection via Application_End.
 
-````C#
+````c#
 public class WebApiApplication : System.Web.HttpApplication
     {
         SqlConnection connection = null;
