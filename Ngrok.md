@@ -23,21 +23,16 @@ Visit Bot Framework to register your bot. When you register it, remember to set 
  a.	 Given the bot is being hosted on localhost:3979, we can use ngrok to expose this port to the public internet
 
  b.	 Open terminal and go to the folder where ngrok is installed
+ 
  c.	 Run the below command and you should see the forwarding url:
 
-     ````
-     ngrok.exe http 3979 -host-header="localhost:3979"
-     
-     ````
+     ````ngrok.exe http 3979 -host-header="localhost:3979"````
 
 ![Forwarding Url](images/Forwarding_URL3.png)
 
  d.	 To use public urls in the bot emulator, you will also need to generate a forwarding url using ngrok for Emulator url (port 9000). Run the below command and you should see the forwarding url for port 9000:
 
-     ````
-     ngrok.exe http -host-header=rewrite 9000
-     
-     ````
+     ````ngrok.exe http -host-header=rewrite 9000````
 
 ![Emulator Url](images/Emulator_URL2.png)
 
