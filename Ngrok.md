@@ -25,13 +25,19 @@ Visit Bot Framework to register your bot. When you register it, remember to set 
  b.	 Open terminal and go to the folder where ngrok is installed
  c.	 Run the below command and you should see the forwarding url:
 
-     ````ngrok.exe http 3979 -host-header="localhost:3979"````
+     ````
+     ngrok.exe http 3979 -host-header="localhost:3979"
+     
+     ````
 
 ![Forwarding Url](images/Forwarding_URL3.png)
 
  d.	 To use public urls in the bot emulator, you will also need to generate a forwarding url using ngrok for Emulator url (port 9000). Run the below command and you should see the forwarding url for port 9000:
 
-     ````ngrok.exe http -host-header=rewrite 9000````
+     ````
+     ngrok.exe http -host-header=rewrite 9000
+     
+     ````
 
 ![Emulator Url](images/Emulator_URL2.png)
 
@@ -42,4 +48,5 @@ Visit Bot Framework to register your bot. When you register it, remember to set 
 ## 4.	Exercise
 
  a.	 When you register the bot on the Microsoft Bot Framework, can you use the forwarding url for the Messaging Endpoint?
+ 
  b.	 Test the bot on a channel using the forwarding URL on a channel.
