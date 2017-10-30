@@ -35,7 +35,7 @@ Visit Bot Framework to register your bot. When you register it, remember to set 
 
 5.	Enter the forwarded urls in the bot emulator (bot url and emulator url). The bot url will have /api/messages appended to the forwarding url. Test the bot in the emulator by sending messages.
 
-![Bot Url](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/Bot_Url2.png)
+![Bot Url](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/Bot_Url3.png)
 
 ## 4.	Exercise
 
