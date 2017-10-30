@@ -41,5 +41,3 @@ Visit Bot Framework to register your bot. When you register it, remember to set 
 
 1.	When you register the bot on the Microsoft Bot Framework, can you use the forwarding url for the Messaging Endpoint?
 2.	Test the bot on a channel using the forwarding URL on a channel.
-
-
