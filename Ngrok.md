@@ -25,13 +25,13 @@ Visit Bot Framework to register your bot. When you register it, remember to set 
 
 ````ngrok.exe http 3979 -host-header="localhost:3979"````
 
-![Forwarding Url](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/Forwarding_Url.png)
+![Forwarding Url](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/Forwarding_URL1.png)
 
 4.	To use public urls in the bot emulator, you will also need to generate a forwarding url using ngrok for Emulator url (port 9000). Run the below command and you should see the forwarding url for port 9000:
 
 ````ngrok.exe http -host-header=rewrite 9000````
 
-![Emulator Url](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/Emulator_Url.png)
+![Emulator Url](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/Emulator_URL1.png)
 
 5.	Enter the forwarded urls in the bot emulator (bot url and emulator url). The bot url will have /api/messages appended to the forwarding url. Test the bot in the emulator by sending messages.
 
