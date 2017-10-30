@@ -12,7 +12,7 @@ When designing / building / testing your code you don’t always want to have to
 
  b.	  Open any Bot project (from the previous labs) in Visual Studio and run it. If you are using EchoBot, you should be seeing the below message in the browser:
 
-EchoBot
+**EchoBot**
 
 Describe your bot here and your terms of use etc.
 
