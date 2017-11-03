@@ -16,7 +16,7 @@ The goal of this lab is to introduce unit testing for bots developed using Micro
 
 Import the EchoBot Solution in VisualStudio from Student-Resources/Labs/CSharp/UnitTests. On successful import, you will see two projects (EchoBot, a Bot Application and EchoBotTests, a Unit Test Project) as shown below. 
 
-![Setup](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/Setup.png)
+![Setup](images/Setup.png)
 
 ## 3.	Echobot
 
@@ -57,7 +57,7 @@ using (new FiberTestBase.ResolveMoqAssembly(rootDialog))
 
 Run all Tests by selecting Test -> Run -> All Tests as shown below and verify the tests run successfully.
 
-![Echo Bot](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/Echobot.png)
+![Echo Bot](images/Echobot.png)
 
 ## 5.	Echobot – Unit Tests
 
