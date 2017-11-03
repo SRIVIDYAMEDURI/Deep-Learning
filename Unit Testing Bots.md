@@ -41,7 +41,7 @@ public async Task MessageReceivedAsync(IDialogContext context, IAwaitable<IMessa
 
 ## 4.	Echobot – Unit Tests
 
-With complex chatbots, you will have conversation state and conversation flow to worry about. There is also the fact that chatbots can respond multiple times to a single user message and that after sending a message, you don’t immediately get a response. Given these complexities, mocking can help with unit testing. Mocking is primarily used in unit testing. An object under test may have dependencies on other (complex) objects. To isolate the behaviour of the object you want to test you replace the other objects by mocks that simulate the behavior of the real objects. This is useful if the real objects are impractical to incorporate into the unit test.
+With complex chatbots, you will have conversation state and conversation flow to worry about. There is also the fact that chatbots can respond multiple times to a single user message and that after sending a message, you don't immediately get a response. Given these complexities, mocking can help with unit testing. Mocking is primarily used in unit testing. An object under test may have dependencies on other (complex) objects. To isolate the behaviour of the object you want to test you replace the other objects by mocks that simulate the behavior of the real objects. This is useful if the real objects are impractical to incorporate into the unit test.
 
 Unit tests can be created using Visual Studio's *Unit Test Project* within the EchoBot Solution. On importing EchoBot.sln, you will see EchoBotTests project which is a Unit Test Project. This project contains a few helper classes (developed by reusing the Bot Builder code) to help develop Unit Tests for Dialogs:
 
@@ -49,7 +49,7 @@ Unit tests can be created using Visual Studio's *Unit Test Project* within the E
 * FiberTestBase.cs
 * MockConnectorFactory.cs
 
-Inside EchoBotTests.cs, you will find a TestMethod called *ShouldReturnEcho. ShouldReturnEcho* verifies the result from EchoBot. The below line in EchoBotTests.cs mocks the behavior of EchoBot using RootDialog. RootDialog is used to provide the functionality of EchoBot.
+Inside EchoBotTests.cs, you will find a TestMethod called *ShouldReturnEcho*. *ShouldReturnEcho* verifies the result from EchoBot. The below line in EchoBotTests.cs mocks the behavior of EchoBot using RootDialog. RootDialog is used to provide the functionality of EchoBot.
 
 ````
 using (new FiberTestBase.ResolveMoqAssembly(rootDialog))
@@ -61,5 +61,5 @@ Run all Tests by selecting Test -> Run -> All Tests as shown below and verify th
 
 ## 5.	Echobot – Unit Tests
 
-1.	Write another TestMethod called EchoStartsWith that verifies echo prompt begins with "You sent".
+1.	Write another TestMethod called *EchoStartsWith* that verifies echo prompt begins with "You sent".
 2.	Can you verify that the echoed messages were sent by a bot?
