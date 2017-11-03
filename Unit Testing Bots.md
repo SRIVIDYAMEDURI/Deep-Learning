@@ -51,7 +51,7 @@ Unit tests can be created using Visual Studio's *Unit Test Project* within the E
 
 Inside EchoBotTests.cs, you will find a TestMethod called *ShouldReturnEcho*. *ShouldReturnEcho* verifies the result from EchoBot. The below line in EchoBotTests.cs mocks the behavior of EchoBot using RootDialog. RootDialog is used to provide the functionality of EchoBot.
 
-````
+````c#
 using (new FiberTestBase.ResolveMoqAssembly(rootDialog))
 ````
 
