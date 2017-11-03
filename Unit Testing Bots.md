@@ -63,4 +63,3 @@ Run all Tests by selecting Test -> Run -> All Tests as shown below and verify th
 
 1.	Write another TestMethod called EchoStartsWith that verifies echo prompt begins with "You sent".
 2.	Can you verify that the echoed messages were sent by a bot?
-
