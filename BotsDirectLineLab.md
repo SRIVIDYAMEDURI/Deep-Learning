@@ -21,7 +21,7 @@ DirectLineSampleClient is the client that will send messages to the bot.
 
 Direct Line API requests can be authenticated either by using a secret that you obtain from the Direct Line channel configuration page in the Bot Framework Portal. Go to the Bot Framework Portal and find your bot. Add Direct Line via *Connect to channels* for your bot.
 
-![Connect to channels](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/Connect%20to%20Channels.png)
+![Connect to channels](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/ConnectToChannels.png)
 
 You can obtain a Secret Key from the Direct Line channel after adding as shown below:
 
