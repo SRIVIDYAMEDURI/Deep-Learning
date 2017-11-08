@@ -21,11 +21,11 @@ DirectLineSampleClient is the client that will send messages to the bot.
 
 Direct Line API requests can be authenticated either by using a secret that you obtain from the Direct Line channel configuration page in the Bot Framework Portal. Go to the Bot Framework Portal and find your bot. Add Direct Line via *Connect to channels* for your bot.
 
-![Connect to channels]()
+![Connect to channels](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/Connect%20to%20Channels.png)
 
 You can obtain a Secret Key from the Direct Line channel after adding as shown below:
 
-![Direct Line]()
+![Direct Line](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/DirectLine.png)
 
 **Security Scope**
 
@@ -46,7 +46,7 @@ The Secret key obtained from *Configure Direct Line* in the Bot Framework Portal
 
 Using Direct Line API, a client can send messages to your bot by issuing HTTP Post requests. A client can receive messages from your bot either via WebSocket stream or by issuing HTTP GET requests.
 
-![Configuration]()
+![Config](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/Config.png)
 
 In this lab, we will explore HTTP Get option to receive messages.
 
@@ -56,15 +56,15 @@ In this lab, we will explore HTTP Get option to receive messages.
 
 ````Console.WriteLine("Conversation ID:" + conversation.ConversationId);````
 
-![Console]()
+![Console](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/Console.png)
 
 3.	Once you have the conversation id, you can retrieve user and bot messages using HTTP Get. To retrieve messages for a specific conversation, you can issue a GET request to 
 https://directline.botframework.com/api/conversations/{conversationId}/messages endpoint. You will also need to pass the Secret Key as part of raw header (i.e. Authorization: Bearer {secretKey}).
 
 4.	Use any Rest Client to receive messages via HTTP Get. In this lab, https://advancedrestclient.com/ is used for receiving messages from the bot. The below images indicate the conversations obtained from Advanced Rest client. Note the conversation “Hi there” and the corresponding bot response that is echoed back.
 
-![HTTPRequest]
+![HTTPRequest](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/HTTPRequest.png)
 
-![HTTPRequest1]
+![HTTPRequest1](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/HTTPRequest1.png)
 
 
