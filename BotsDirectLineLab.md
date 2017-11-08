@@ -27,7 +27,7 @@ You can obtain a Secret Key from the Direct Line channel after adding as shown b
 
 ![Direct Line]()
 
-Security Scope
+**Security Scope**
 
 Secret Key: Secret key is application wide and is embedded in the client application. Every conversation that is initiated by the application would use the same secret. This makes it very convenient.
 
