@@ -37,11 +37,10 @@ Tokens: A token is conversation specific. You request a token using that secret 
 
 The Secret key obtained from *Configure Direct Line* in the Bot Framework Portal is then added to the Configuration settings in App.config file as shown below. In addition, for the published bot, capture the bot id and enter in the appSettings part of App.config from DirectLineSampleClient project. The relevant lines of App.config to enter in the App.config are listed as follows:
 
-```c#
+````
 <add key="DirectLineSecret" value="YourBotDirectLineSecret" />
 <add key="BotId" value="YourBotId" />
-
-```
+````
 
 ## Sending and Receiving Messages
 
