@@ -41,7 +41,7 @@ The Secret key obtained from *Configure Direct Line* in the Bot Framework Portal
 <add key="DirectLineSecret" value="YourBotDirectLineSecret" />
 <add key="BotId" value="YourBotId" />
 
-````
+```
 
 ## Sending and Receiving Messages
 
