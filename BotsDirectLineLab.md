@@ -20,7 +20,7 @@ DirectLineSampleClient is the client that will send messages to the bot.
 
 Direct Line API requests can be authenticated either by using a secret that you obtain from the Direct Line channel configuration page in the Bot Framework Portal. Go to the Bot Framework Portal and find your bot. Add Direct Line via *Connect to channels* for your bot.
 
-![Connect to channels](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/ConnectToChannels.png)
+![Connect to channels](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/ConnectToChannels12.png)
 
 You can obtain a Secret Key from the Direct Line channel after adding as shown below:
 
@@ -81,7 +81,7 @@ Using Direct Line API, a client can send messages to your bot by issuing HTTP Po
 curl -H "Authorization:Bearer {SecretKey}" https://directline.botframework.com/api/conversations/{conversationId}/messages -XGET
 ```
 
-![Messages-XGET](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/Messages-XGET10.png)
+![Messages-XGET](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/Messages-XGET21.png)
 
 5.	Direct Line API 3.0
 
@@ -103,4 +103,4 @@ case "send me a botframework image":
 
 Enter this text using the client and view the results via curl as shown below. You will find the image url displayed in the images array.
 
-![Images Array](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/ImagesArray9.png)
+![Images Array](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/ImagesArray11.png)
