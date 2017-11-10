@@ -84,7 +84,7 @@ Using Direct Line API, a client can send messages to your bot by issuing HTTP Po
 curl -H "Authorization:Bearer {SecretKey}" https://directline.botframework.com/api/conversations/{conversationId}/messages -XGET
 ```
 
-![Messages-XGET](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/Messages-XGET.png)
+![Messages-XGET](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/Messages-XGET1.png)
 
 5.	Direct Line API 3.0
 
@@ -106,4 +106,4 @@ case "send me a botframework image":
 
 Enter this text using the client and view the results via curl as shown below. You will find the image url displayed in the images array.
 
-![Images Array](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/ImagesArray.png)
+![Images Array](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/ImagesArray1.png)
