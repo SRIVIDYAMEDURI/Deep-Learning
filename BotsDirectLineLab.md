@@ -9,6 +9,7 @@ In certain scenarios such as testing, communication directly to your bot may be 
 For this lab, you can use a published Bot to talk to via Direct Line API. 
 
 Download the sample from:
+
 https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/core-DirectLine and import the solution in Visual Studio.
 
 In the DirectLineBot solution, you will find two projects – DirectLineBot and DirectLineSampleClient. If you do not have a published app, you can publish DirectLineBot. The previous labs should have prepared you with the steps related to publishing bots. 
