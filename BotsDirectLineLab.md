@@ -69,3 +69,36 @@ Using Direct Line API, a client can send messages to your bot by issuing HTTP Po
 
 ![HTTPRequest1](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/HTTP_Request_1.2.png)
 
+
+Curl:
+
+Alternatively, you can also use curl for communicating with the bot. You can download curl from https://curl.haxx.se/download.html
+
+Open terminal and go to the location where curl is installed and run the below command for a specific conversation:
+
+curl -H "Authorization:Bearer {SecretKey}" https://directline.botframework.com/api/conversations/{conversationId}/messages -XGET
+
+![Messages-XGET](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/Messages-XGET.png)
+
+5.	Direct Line API 3.0
+
+With 3.0, you can also send rich media such as images or hero cards unlike the earlier versions. In DirectLineBotDialog.cs, one of the case statements looks for the text "send me a botframework image" to send image
+
+```
+case "send me a botframework image":
+                    
+	reply.Text = $"Sample message with an Image attachment";
+
+        	var imageAttachment = new Attachment()
+                {
+                	ContentType = "image/png",
+                        ContentUrl = "https://docs.microsoft.com/en-us/bot-framework/media/how-it-works/architecture-resize.png",
+                };
+
+			reply.Attachments.Add(imageAttachment);
+```
+
+Enter this text using the client and view the results via curl as shown below. You will find the image url displayed in the images array.
+
+![Images Array](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/ImagesArray.png)
+
