@@ -90,7 +90,7 @@ curl -H "Authorization:Bearer {SecretKey}" https://directline.botframework.com/a
 
 	With 3.0, you can also send rich media such as images or hero cards unlike the earlier versions. In DirectLineBotDialog.cs, one of the case statements looks for the text "send me a botframework image" to send image
 
-```
+```c#
 case "send me a botframework image":
                     
 	reply.Text = $"Sample message with an Image attachment";
