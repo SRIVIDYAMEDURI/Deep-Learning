@@ -80,8 +80,10 @@ Using Direct Line API, a client can send messages to your bot by issuing HTTP Po
 	https://curl.haxx.se/download.html
 
 		Open terminal and go to the location where curl is installed and run the below command for a specific conversation:
-
-		curl -H "Authorization:Bearer {SecretKey}" 											https://directline.botframework.com/api/conversations/{conversationId}/messages-XGET
+		
+		```
+		curl -H "Authorization:Bearer {SecretKey}" https://directline.botframework.com/api/conversations/{conversationId}/messages -XGET
+		```
 
 	![Messages-XGET](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/Messages-XGET.png)
 
