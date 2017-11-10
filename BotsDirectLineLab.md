@@ -1,5 +1,3 @@
-# Developing and Deploying Intelligent Chat Bots
-
 # Connect directly to a Bot  - Direct Line
 
 ## Objectives
@@ -56,7 +54,7 @@ In this lab, we will explore HTTP Get option to receive messages.
 
 ````Console.WriteLine("Conversation ID:" + conversation.ConversationId);````
 
-![Console](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/Console.png)
+![Console](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/Console1.png)
 
 3.	Once you have the conversation id, you can retrieve user and bot messages using HTTP Get. To retrieve messages for a specific conversation, you can issue a GET request to 
 https://directline.botframework.com/api/conversations/{conversationId}/messages endpoint. You will also need to pass the Secret Key as part of raw header (i.e. Authorization: Bearer {secretKey}).
