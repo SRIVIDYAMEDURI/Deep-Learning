@@ -41,13 +41,11 @@ The Secret key obtained from *Configure Direct Line* in the Bot Framework Portal
 <add key="BotId" value="YourBotId" />
 ```
 
-## Sending and Receiving Messages
-
-Using Direct Line API, a client can send messages to your bot by issuing HTTP Post requests. A client can receive messages from your bot either via WebSocket stream or by issuing HTTP GET requests.
-
 ![Config](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/Config.png)
 
-In this lab, we will explore HTTP Get option to receive messages.
+## Sending and Receiving Messages
+
+Using Direct Line API, a client can send messages to your bot by issuing HTTP Post requests. A client can receive messages from your bot either via WebSocket stream or by issuing HTTP GET requests. In this lab, we will explore HTTP Get option to receive messages.
 
 1.	Run project DirectLineSampleClient after making the Config changes.
 
@@ -57,8 +55,7 @@ In this lab, we will explore HTTP Get option to receive messages.
 
 ![Console](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/Console1.png)
 
-3.	Once you have the conversation id, you can retrieve user and bot messages using HTTP Get. To retrieve messages for a specific conversation, you can issue a GET request to 
-https://directline.botframework.com/api/conversations/{conversationId}/messages endpoint. You will also need to pass the Secret Key as part of raw header (i.e. Authorization: Bearer {secretKey}).
+3.	Once you have the conversation id, you can retrieve user and bot messages using HTTP Get. To retrieve messages for a specific conversation, you can issue a GET request to https://directline.botframework.com/api/conversations/{conversationId}/messages endpoint. You will also need to pass the Secret Key as part of raw header (i.e. Authorization: Bearer {secretKey}).
 
 4.	Use any Rest Client to receive messages via HTTP Get. In this lab, https://advancedrestclient.com/ is used for receiving messages from the bot. The below images indicate the conversations obtained from *Advanced Rest client*. Note the conversation "Hi there" and the corresponding bot response that is echoed back.
 
