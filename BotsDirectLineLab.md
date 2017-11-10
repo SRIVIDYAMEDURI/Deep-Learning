@@ -81,9 +81,9 @@ Using Direct Line API, a client can send messages to your bot by issuing HTTP Po
 
 		Open terminal and go to the location where curl is installed and run the below command for a specific conversation:
 		
-		```
-		curl -H "Authorization:Bearer {SecretKey}" https://directline.botframework.com/api/conversations/{conversationId}/messages -XGET
-		```
+```
+curl -H "Authorization:Bearer {SecretKey}" https://directline.botframework.com/api/conversations/{conversationId}/messages -XGET
+```
 
 	![Messages-XGET](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/Messages-XGET.png)
 
@@ -91,7 +91,7 @@ Using Direct Line API, a client can send messages to your bot by issuing HTTP Po
 
 	With 3.0, you can also send rich media such as images or hero cards unlike the earlier versions. In DirectLineBotDialog.cs, one of the case statements looks for the text "send me a botframework image" to send image
 
-	```
+```
 case "send me a botframework image":
                     
 	reply.Text = $"Sample message with an Image attachment";
