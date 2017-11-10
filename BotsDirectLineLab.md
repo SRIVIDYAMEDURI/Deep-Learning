@@ -81,7 +81,7 @@ Using Direct Line API, a client can send messages to your bot by issuing HTTP Po
 curl -H "Authorization:Bearer {SecretKey}" https://directline.botframework.com/api/conversations/{conversationId}/messages -XGET
 ```
 
-![Messages-XGET](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/Messages-XGET4.png)
+![Messages-XGET](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/Messages-XGET5.png)
 
 5.	Direct Line API 3.0
 
