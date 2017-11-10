@@ -61,26 +61,27 @@ Using Direct Line API, a client can send messages to your bot by issuing HTTP Po
 
 	4.1	Web based Rest Clients:
 
-You can use https://advancedrestclient.com/ with chrome for receiving messages from the bot. The below images indicate the conversations obtained from *Advanced Rest client*. Note the conversation "Hi there" and the corresponding bot response that is echoed back.
+		You can use https://advancedrestclient.com/ with chrome for receiving messages from the bot. The below images indicate 			the conversations obtained from *Advanced Rest client*. Note the conversation "Hi there" and the corresponding bot 			response that is echoed back.
 
-![HTTPRequest](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/HTTP_Request_1.1.png)
-
-
-&nbsp;
+		![HTTPRequest](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/HTTP_Request_1.1.png)
 
 
-&nbsp;
-
-![HTTPRequest1](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/HTTP_Request_1.2.png)
+		&nbsp;
 
 
-Curl:
+		&nbsp;
 
-Alternatively, you can also use curl for communicating with the bot. You can download curl from https://curl.haxx.se/download.html
+		![HTTPRequest1](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/HTTP_Request_1.2.png)
 
-Open terminal and go to the location where curl is installed and run the below command for a specific conversation:
 
-curl -H "Authorization:Bearer {SecretKey}" https://directline.botframework.com/api/conversations/{conversationId}/messages-XGET
+		Curl:
+
+		Alternatively, you can also use curl for communicating with the bot. You can download curl from 	
+		https://curl.haxx.se/download.html
+
+		Open terminal and go to the location where curl is installed and run the below command for a specific conversation:
+
+		curl -H "Authorization:Bearer {SecretKey}" 												https://directline.botframework.com/api/conversations/{conversationId}/messages-XGET
 
 ![Messages-XGET](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/Messages-XGET.png)
 
