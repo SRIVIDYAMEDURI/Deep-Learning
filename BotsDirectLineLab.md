@@ -101,4 +101,3 @@ case "send me a botframework image":
 Enter this text using the client and view the results via curl as shown below. You will find the image url displayed in the images array.
 
 ![Images Array](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/ImagesArray.png)
-
