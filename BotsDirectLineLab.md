@@ -20,11 +20,11 @@ DirectLineSampleClient is the client that will send messages to the bot.
 
 Direct Line API requests can be authenticated either by using a secret that you obtain from the Direct Line channel configuration page in the Bot Framework Portal. Go to the Bot Framework Portal and find your bot. Add Direct Line via *Connect to channels* for your bot.
 
-![Connect to channels](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/ConnectToChannels12.png)
+![Connect to channels](images/ConnectToChannels12.png)
 
 You can obtain a Secret Key from the Direct Line channel after adding as shown below:
 
-![Direct Line](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/DirectLine.png)
+![Direct Line](images/DirectLine.png)
 
 **Security Scope**
 
@@ -41,7 +41,7 @@ The Secret key obtained from *Configure Direct Line* in the Bot Framework Portal
 <add key="BotId" value="YourBotId" />
 ```
 
-![Config](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/Config.png)
+![Config](images/Config.png)
 
 ## Sending and Receiving Messages
 
@@ -53,7 +53,7 @@ Using Direct Line API, a client can send messages to your bot by issuing HTTP Po
 
 ````Console.WriteLine("Conversation ID:" + conversation.ConversationId);````
 
-![Console](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/Console1.png)
+![Console](images/Console1.png)
 
 3.	Once you have the conversation id, you can retrieve user and bot messages using HTTP Get. To retrieve messages for a specific conversation, you can issue a GET request to https://directline.botframework.com/api/conversations/{conversationId}/messages endpoint. You will also need to pass the Secret Key as part of raw header (i.e. Authorization: Bearer {secretKey}).
 
@@ -81,7 +81,7 @@ Using Direct Line API, a client can send messages to your bot by issuing HTTP Po
 curl -H "Authorization:Bearer {SecretKey}" https://directline.botframework.com/api/conversations/{conversationId}/messages -XGET
 ```
 
-![Messages-XGET](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/Messages-XGET21.png)
+![Messages-XGET](images/Messages-XGET21.png)
 
 5.	Direct Line API 3.0
 
@@ -103,4 +103,4 @@ case "send me a botframework image":
 
 Enter this text using the client and view the results via curl as shown below. You will find the image url displayed in the images array.
 
-![Images Array](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/ImagesArray11.png)
+![Images Array](images/ImagesArray11.png)
