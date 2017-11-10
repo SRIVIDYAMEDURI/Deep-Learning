@@ -59,7 +59,7 @@ Using Direct Line API, a client can send messages to your bot by issuing HTTP Po
 
 4.	Use any Rest Client to receive messages via HTTP Get.
 
-Web based Rest Clients:
+	4.1	Web based Rest Clients:
 
 You can use https://advancedrestclient.com/ with chrome for receiving messages from the bot. The below images indicate the conversations obtained from *Advanced Rest client*. Note the conversation "Hi there" and the corresponding bot response that is echoed back.
 
