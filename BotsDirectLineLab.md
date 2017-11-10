@@ -95,13 +95,13 @@ case "send me a botframework image":
                     
 	reply.Text = $"Sample message with an Image attachment";
 
-        	var imageAttachment = new Attachment()
-                {
-                	ContentType = "image/png",
-                        ContentUrl = "https://docs.microsoft.com/en-us/bot-framework/media/how-it-works/architecture-resize.png",
-                };
+        var imageAttachment = new Attachment()
+        {
+		ContentType = "image/png",
+                ContentUrl = "https://docs.microsoft.com/en-us/bot-framework/media/how-it-works/architecture-resize.png",
+         };
 
-			reply.Attachments.Add(imageAttachment);
+		reply.Attachments.Add(imageAttachment);
 ```
 
 Enter this text using the client and view the results via curl as shown below. You will find the image url displayed in the images array.
