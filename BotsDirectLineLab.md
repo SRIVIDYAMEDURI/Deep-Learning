@@ -61,7 +61,7 @@ https://directline.botframework.com/api/conversations/{conversationId}/messages 
 
 4.	Use any Rest Client to receive messages via HTTP Get. In this lab, https://advancedrestclient.com/ is used for receiving messages from the bot. The below images indicate the conversations obtained from *Advanced Rest client*. Note the conversation "Hi there" and the corresponding bot response that is echoed back.
 
-![HTTPRequest](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/HTTP%20Request.png)
+![HTTPRequest](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/HTTP_Request.png)
 
 
 ![HTTPRequest1](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/HTTP%20Request%201.png)
