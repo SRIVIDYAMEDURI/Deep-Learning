@@ -63,15 +63,15 @@ Using Direct Line API, a client can send messages to your bot by issuing HTTP Po
 
 		You can use https://advancedrestclient.com/ with chrome for receiving messages from the bot. The below images indicate 			the conversations obtained from *Advanced Rest client*. Note the conversation "Hi there" and the corresponding bot 			response that is echoed back.
 
-		![HTTPRequest](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/HTTP_Request_1.1.png)
+![HTTPRequest](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/HTTP_Request_1.1.png)
 
 
-		&nbsp;
+&nbsp;
 
 
-		&nbsp;
+&nbsp;
 
-		![HTTPRequest1](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/HTTP_Request_1.2.png)
+![HTTPRequest1](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/HTTP_Request_1.2.png)
 
 
 		Curl:
