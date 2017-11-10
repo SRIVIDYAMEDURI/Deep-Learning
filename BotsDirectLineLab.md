@@ -62,6 +62,9 @@ Using Direct Line API, a client can send messages to your bot by issuing HTTP Po
 ![HTTPRequest](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/HTTP_Request_1.1.png)
 
 
+
+
+
 ![HTTPRequest1](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/images/HTTP_Request_1.2.png)
 
 
