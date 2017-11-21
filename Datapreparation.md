@@ -22,7 +22,7 @@ Data Preparation is part of the Vienna client experience and installed with it. 
 
 PROSE is a framework of technologies for programming by examples – automatic generation of programs from input-output examples at runtime. PROSE includes a pre-defined suite of technologies for various kinds of data wrangling – cleaning and pre-processing raw semi-structure data into a form amenable to analysis.
 
-1.	Select [Data Sources](SQL Logger.md) and click the + sign to add Data Source.
+1.	Select [Data Sources](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/Datapreparation.md) and click the + sign to add Data Source.
 
 ![Add Data Source](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/Images/Add%20Data%20Source.png)
 
