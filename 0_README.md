@@ -124,7 +124,7 @@ The workbench is flexible to run experimentation on big data using HDInsight Spa
 
 - Once you have the compute context, you can run the following CLI command to execute CATelcoCustomerChurnModelingWithoutDprep.py as follows.
 
-```az ml experiment submit -c myhdi CATelcoCustomerChurnModelingWithoutDprep.py```
+```az ml experiment submit -c "myhdi" CATelcoCustomerChurnModelingWithoutDprep.py```
 
 The execution environment on HDInsight cluster is managed using Conda. Configuration is managed by conda_dependencies.yml and spark_dependencies.yml configuration files. 
 
