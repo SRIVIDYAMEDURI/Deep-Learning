@@ -99,9 +99,9 @@ sudo docker run docker/whalesay cowsay "The best debugging is done with CTRL-X. 
 az ml computetarget attach remotedocker --name "remotevm" --address "remotevm_IP_address" --username "sshuser" --password "sshpassword"
 ```
 
-- Before running against â€œremotevmâ€, you need to prepare it with your project's environment by running:
+- Before running against "remotevm", you need to prepare it with your project's environment by running:
 ```
-az ml experiment prepare -c â€œremotevmâ€
+az ml experiment prepare -c "remotevm"
 ```
 
 - Once you configure the compute target, you can use the following command to run the churn script.
