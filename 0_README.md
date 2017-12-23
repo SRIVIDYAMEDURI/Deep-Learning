@@ -77,7 +77,7 @@ You should see results as follows:
 
 ![Naive Bayes](Images/naive-bayes.png)
 
-### Lab 2: Execute an Experiment to a remote Data Science Virtual Machine
+### Lab 2: Execute an Experiment on a remote Data Science Virtual Machine
 
 In this lab you will create an experiment, examine its configuration, and run the experiment on a remote Docker container. You'll set up the experiment in the AMLS Workbench tool, and then run all experiments from the command line interface (CLI)
 
