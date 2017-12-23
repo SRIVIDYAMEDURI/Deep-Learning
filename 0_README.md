@@ -75,7 +75,7 @@ For running the script on local Docker, you can execute the following command in
 
 You should see results as follows:
 
-![Navie Bayes](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/Images/Navie%20Bayes1.png)
+![Navie Bayes](https://github.com/SRIVIDYAMEDURI/Deep-Learning/blob/master/Images/Navie.png)
 
 ### Lab 2: Execute an Experiment to a remote Data Science Virtual Machine
 
