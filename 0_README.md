@@ -75,7 +75,7 @@ For running the script on local Docker, you can execute the following command in
 
 You should see results as follows:
 
-![Naive Bayes](Images/naive-bayes.png)
+![Naive Bayes](images/naive-bayes.png)
 
 ### Lab 2: Execute an Experiment on a remote Data Science Virtual Machine
 
