@@ -47,7 +47,7 @@ f.close()
 - Launch CLI and run ```az ml experiment submit -c local CATelcoCustomerChurnModeling.py```
 - Check if dt.pkl and model.pkl is in the output folder as shown below.
 
-![CATelcoCustomer](images/CATelcoCustomer_gWithoutDprep)
+![CATelcoCustomer](images/)
 
 - Download the model files and put in root folder.
 - If you have not already generated Schema, generate the schema by running ```python churn_schema_gen.py```
@@ -73,3 +73,65 @@ To check the status of an ongoing cluster provisioning, use the following comman
 ```az ml env show -n [environment name] -g [resource group]```
 
 Ensure that “Provisioning State” is set to "Succeeded" before proceeding.
+
+**Set the environment:**
+
+```az ml env set -n [environment name] -g [resource group]```
+
+**Create a Model Management Account:**
+
+A model management account is required for deploying models. You need to do this once per subscription, and can reuse the same account in multiple deployments.+ 
+To create a new account, use the following command:
+az ml account modelmanagement create -l [Azure region, e.g. eastus2] -n [your account name] -g [resource group name] --sku-instances [number of instances, e.g. 1] --sku-name [Pricing tier for example S1]
+
+To use an existing account, use the following command:
+
+```az ml account modelmanagement set -n [your account name] -g [resource group it was created in]```
+
+**Deploy your model**
+
+You are now ready to deploy your saved model as a web service.
+
+```az ml service create realtime --model-file [model file/folder path] -f [scoring file e.g. score.py] -n [your service name] -s [schema file e.g. service_schema.json] -r [runtime for the Docker container e.g. spark-py or python] -c [conda dependencies file for additional python packages]```
+
+
+### Lab 3: Update Service with new model
+
+To use a different model in the service, we can perform a simple update to the service. In our churn prediction experiment, the accuracy of Decision Tree is slightly higher than Naïve Bayes. So, we can update the service to use the dt.pkl file.
+To use a specific model in your scoring file, change references from model.pkl to the model you want to use. In our scenario, replace model.pkl with dt.pkl
+There are three steps to perform in order to update the service:
+
+**1.Register dt model:**
+
+```az ml model register -m dt.pkl -n dt.pkl```
+
+You will now be able to see the new model (or newer version if you had previously registered dt) when you run az ml model list -o table
+
+**2.Create manifest:**
+
+Create a manifest for the model in Azure Container Services. To do so, in the next command, we replace <model_id> with the model ID that was returned in the last command:
+
+```az ml manifest create -n churndecisiontree -f score.py -s service_schema.json -r python -i <model_id>```
+
+You will get the manifest Id when you run az ml manifest create. Make a note of this id and replace it in the below command when creating image. Run the below command:
+
+```az ml image create -n churnpred --manifest-id <manifest_id>```
+
+**3.Update service with image:**
+
+Finally, the last step is to update the existing service out of the new image created. We would need the image id created from the last step along with the service id. To obtain the service id, run az ml service list realtime to get a list of all the service ids. Run the below command to update the service:
+
+```az ml service update realtime -i <service_id_on_portal> --image-id <new_image_id>```
+
+## Workshop Completion
+
+In this workshop you learned how to:
+- Understand how to create a model file
+- Generate a scoring script and schema file
+- Prepare your scoring environment
+- Deploy models to production
+- Update service
+
+You may now decommission and delete the following resources if you wish:
+  * The Azure Machine Learning Services accounts and workspaces
+  * Any Data Science Virtual Machines you have created. NOTE: Even if "Shutdown" in the Operating System, unless these Virtual Machines are "Stopped" using the Azure Portal you are incurring run-time charges. If you Stop them in the Azure Portal, you will be charged for the storage the Virtual Machines are consuming.
