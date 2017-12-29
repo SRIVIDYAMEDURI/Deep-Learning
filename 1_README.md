@@ -64,6 +64,7 @@ This sets up an ACS cluster with Kubernetes as the orchestrator. The cluster env
 3.  An Azure Container Registry (ACR)
 4.  A Kubernetes deployment on an Azure Container Service (ACS) cluster
 5.  An Application insights account
+
 The resource group, storage account, and ACR are created quickly. The ACS deployment can take up to 20 minutes.
 
 **Check Status:**
