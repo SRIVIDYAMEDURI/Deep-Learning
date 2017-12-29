@@ -47,7 +47,7 @@ f.close()
 - Launch CLI and run ```az ml experiment submit -c local CATelcoCustomerChurnModeling.py```
 - Check if dt.pkl and model.pkl is in the output folder as shown below.
 
-![CATelcoCustomer](images/)
+![CATelcoCustomer](images/CATelcoCustomer_gWithoutDprep.png)
 
 - Download the model files and put in root folder.
 - If you have not already generated Schema, generate the schema by running ```python churn_schema_gen.py```
