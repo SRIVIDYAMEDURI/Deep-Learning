@@ -83,7 +83,8 @@ Ensure that “Provisioning State” is set to "Succeeded" before proceeding.
 
 A model management account is required for deploying models. You need to do this once per subscription, and can reuse the same account in multiple deployments.+ 
 To create a new account, use the following command:
-az ml account modelmanagement create -l [Azure region, e.g. eastus2] -n [your account name] -g [resource group name] --sku-instances [number of instances, e.g. 1] --sku-name [Pricing tier for example S1]
+
+```az ml account modelmanagement create -l [Azure region, e.g. eastus2] -n [your account name] -g [resource group name] --sku-instances [number of instances, e.g. 1] --sku-name [Pricing tier for example S1]```
 
 To use an existing account, use the following command:
 
