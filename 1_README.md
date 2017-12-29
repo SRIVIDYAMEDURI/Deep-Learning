@@ -59,11 +59,11 @@ f.close()
 ```az ml env setup --cluster -n [your environment name] -l [Azure region e.g. eastus2] [-g [resource group]]```
 
 This sets up an ACS cluster with Kubernetes as the orchestrator. The cluster environment setup command creates the following resources in your subscription: 
-1. A resource group (if not provided, or if the name provided does not exist)
-2. A storage account
-3. An Azure Container Registry (ACR)
-4. A Kubernetes deployment on an Azure Container Service (ACS) cluster
-5. An Application insights account
+1.  A resource group (if not provided, or if the name provided does not exist)
+2.  A storage account
+3.  An Azure Container Registry (ACR)
+4.  A Kubernetes deployment on an Azure Container Service (ACS) cluster
+5.  An Application insights account
 
 The resource group, storage account, and ACR are created quickly. The ACS deployment can take up to 20 minutes.
 
@@ -103,13 +103,13 @@ To use a different model in the service, we can perform a simple update to the s
 To use a specific model in your scoring file, change references from model.pkl to the model you want to use. In our scenario, replace model.pkl with dt.pkl
 There are three steps to perform in order to update the service:
 
-**1.Register dt model:**
+**1. Register dt model:**
 
 ```az ml model register -m dt.pkl -n dt.pkl```
 
 You will now be able to see the new model (or newer version if you had previously registered dt) when you run az ml model list -o table
 
-**2.Create manifest:**
+**2. Create manifest:**
 
 Create a manifest for the model in Azure Container Services. To do so, in the next command, we replace <model_id> with the model ID that was returned in the last command:
 
@@ -119,7 +119,7 @@ You will get the manifest Id when you run az ml manifest create. Make a note of 
 
 ```az ml image create -n churnpred --manifest-id <manifest_id>```
 
-**3.Update service with image:**
+**3. Update service with image:**
 
 Finally, the last step is to update the existing service out of the new image created. We would need the image id created from the last step along with the service id. To obtain the service id, run az ml service list realtime to get a list of all the service ids. Run the below command to update the service:
 
