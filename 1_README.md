@@ -73,7 +73,7 @@ To check the status of an ongoing cluster provisioning, use the following comman
 
 ```az ml env show -n [environment name] -g [resource group]```
 
-Ensure that “Provisioning State” is set to "Succeeded" before proceeding.
+Ensure that "Provisioning State" is set to "Succeeded" before proceeding.
 
 **Set the environment:**
 
@@ -81,7 +81,7 @@ Ensure that “Provisioning State” is set to "Succeeded" before proceeding.
 
 **Create a Model Management Account:**
 
-A model management account is required for deploying models. You need to do this once per subscription, and can reuse the same account in multiple deployments.+ 
+A model management account is required for deploying models. You need to do this once per subscription, and can reuse the same account in multiple deployments.+
 To create a new account, use the following command:
 
 ```az ml account modelmanagement create -l [Azure region, e.g. eastus2] -n [your account name] -g [resource group name] --sku-instances [number of instances, e.g. 1] --sku-name [Pricing tier for example S1]```
@@ -109,7 +109,7 @@ There are three steps to perform in order to update the service:
 
 ```az ml model register -m dt.pkl -n dt.pkl```
 
-You will now be able to see the new model (or newer version if you had previously registered dt) when you run az ml model list -o table
+You will now be able to see the new model (or newer version if you had previously registered dt) when you run ```az ml model list -o table```
 
 **2. Create manifest:**
 
@@ -123,7 +123,7 @@ You will get the manifest Id when you run az ml manifest create. Make a note of 
 
 **3. Update service with image:**
 
-Finally, the last step is to update the existing service out of the new image created. We would need the image id created from the last step along with the service id. To obtain the service id, run az ml service list realtime to get a list of all the service ids. Run the below command to update the service:
+Finally, the last step is to update the existing service out of the new image created. We would need the image id created from the last step along with the service id. To obtain the service id, run ***az ml service list realtime*** to get a list of all the service ids. Run the below command to update the service:
 
 ```az ml service update realtime -i <service_id_on_portal> --image-id <new_image_id>```
 
