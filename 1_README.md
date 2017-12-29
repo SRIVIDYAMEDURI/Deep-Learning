@@ -92,7 +92,9 @@ To use an existing account, use the following command:
 
 You are now ready to deploy your saved model as a web service.
 
-```az ml service create realtime --model-file [model file/folder path] -f [scoring file e.g. score.py] -n [your service name] -s [schema file e.g. service_schema.json] -r [runtime for the Docker container e.g. spark-py or python] -c [conda dependencies file for additional python packages]```
+````
+az ml service create realtime --model-file [model file/folder path] -f [scoring file e.g. score.py] -n [your service name] -s [schema file e.g. service_schema.json] -r [runtime for the Docker container e.g. spark-py or python] -c [conda dependencies file for additional python packages]
+````
 
 
 ### Lab 3: Update Service with new model
