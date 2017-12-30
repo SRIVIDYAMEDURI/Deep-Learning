@@ -66,6 +66,7 @@ This sets up an ACS cluster with Kubernetes as the orchestrator. The cluster env
 5.  An Application insights account
 
 The resource group, storage account, and ACR are created quickly. The ACS deployment can take up to 20 minutes.
+Perform the below steps to deploy your model
 
 **Check Status:**
 
@@ -81,7 +82,7 @@ Ensure that "Provisioning State" is set to "Succeeded" before proceeding.
 
 **Create a Model Management Account:**
 
-A model management account is required for deploying models. You need to do this once per subscription, and can reuse the same account in multiple deployments.+
+A model management account is required for deploying models. You need to do this once per subscription, and can reuse the same account in multiple deployments.
 
 To create a new account, use the following command:
 
