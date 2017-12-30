@@ -67,7 +67,7 @@ This sets up an ACS cluster with Kubernetes as the orchestrator. The cluster env
 
 The resource group, storage account, and ACR are created quickly. The ACS deployment can take up to 20 minutes.
 
-Perform the below steps to deploy your model
+Perform the below steps to deploy your model:
 
 **Check Status**
 
