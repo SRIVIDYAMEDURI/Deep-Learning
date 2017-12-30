@@ -12,12 +12,12 @@ In this workshop, you will:
 ***NOTE:*** There are several pre-requisites for this course, including an understanding and implementation of: 
   *  Programming using an Agile methodology
   *  Machine Learning and Data Science
-  *  Intermediate to Advancced Python programming
+  *  Intermediate to Advanced Python programming
   *  Familiarity with Docker containers and Kubernetes
 
 There is a comprehensive Learning Path you can use to prepare for this course [located here](https://github.com/Azure/learnAnalytics-CreatingSolutionswiththeTeamDataScienceProcess-/blob/master/Instructions/Learning%20Path%20-%20Creating%20Solutions%20with%20the%20Team%20Data%20Science%20Process.md).
 
-## Building the Scoring for remote Deployment
+## Building the scoring for remote deployment
 
 (Note - [Our primary example is here](https://docs.microsoft.com/en-us/azure/machine-learning/preview/tutorial-classifying-iris-part-3) and [Another example is here](https://blogs.technet.microsoft.com/machinelearning/2017/09/25/deploying-machine-learning-models-using-azure-machine-learning/) )
 
@@ -32,11 +32,11 @@ We will review these articles in class:
   4.  [Scaling Clusters](https://docs.microsoft.com/en-us/azure/machine-learning/preview/how-to-scale-clusters)
 
 
-### Lab 1: Generate Naive Bayes and Decision Tree Model files
+### Lab 1: Generate Naive Bayes and Decision Tree model files
 
-In this lab you'll create an churn prediction experiment, examine its configuration, and run the experiment locally to generate model files.
+In this lab, you'll create an Churn Prediction experiment, examine its configuration, and run the experiment locally to generate model files.
 - Open the Azure Machine Learning Services Workbench tool locally or on your Data Science Virtual Machine. 
-- Add the below code snippet to the end of CATelcoCustomerChurnModeling.py:
+- Add the below code snippet to the end of CATelcoCustomerChurnModeling.py for exporting the decision tree model:
 ```python
 # serialize the dt on disk in the 'outputs' folder
 print ("Export the dt model to outputs/model.pkl")
@@ -45,12 +45,12 @@ pickle.dump(dt, f)
 f.close()
 ```
 - Launch CLI and run ```az ml experiment submit -c local CATelcoCustomerChurnModeling.py```
-- Check if dt.pkl and model.pkl is in the output folder as shown below.
+- dt.pkl and model.pkl (naive bayes) should be exported in the output folder as shown below:
 
 ![CATelcoCustomer](images/CATelcoCustomer_gWithoutDprep.png)
 
 - Download the model files and put in root folder.
-- If you have not already generated Schema, generate the schema by running ```python churn_schema_gen.py```
+- If you have not already generated schema, generate the schema by running ```python churn_schema_gen.py```
 
 ### Lab 2: Deploy Service to Production
 
