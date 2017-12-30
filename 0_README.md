@@ -32,7 +32,7 @@ We will review these articles in class:
   4.  [Scaling Clusters](https://docs.microsoft.com/en-us/azure/machine-learning/preview/how-to-scale-clusters)
 
 
-### Lab 1: Generate Naive Bayes and Decision Tree model files
+### Lab 1: Generate model files
 
 In this lab, you'll create an Churn Prediction experiment, examine its configuration, and run the experiment locally to generate model files.
 - Open the Azure Machine Learning Services Workbench tool locally or on your Data Science Virtual Machine. 
