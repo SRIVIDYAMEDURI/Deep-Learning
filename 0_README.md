@@ -37,13 +37,13 @@ We will review these articles in class:
 In this lab you'll create an churn prediction experiment, examine its configuration, and run the experiment locally to generate model files.
 - Open the Azure Machine Learning Services Workbench tool locally or on your Data Science Virtual Machine. 
 - Add the below code snippet to the end of CATelcoCustomerChurnModeling.py:
-````python
+```python
 # serialize the dt on disk in the 'outputs' folder
 print ("Export the dt model to outputs/model.pkl")
 f = open('./outputs/dt.pkl', 'wb')
 pickle.dump(dt, f)
 f.close()
-````
+```
 - Launch CLI and run ```az ml experiment submit -c local CATelcoCustomerChurnModeling.py```
 - Check if dt.pkl and model.pkl is in the output folder as shown below.
 
