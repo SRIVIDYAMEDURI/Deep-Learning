@@ -102,17 +102,17 @@ To deploy your saved model as a web service, execute the below command:
 
 ### Lab 3: Update Service with new model
 
-To use a different model in the service, we can perform a simple update to the service. In our churn prediction experiment, the accuracy of Decision Tree is slightly higher than Naïve Bayes. So, we can update the service to use the dt.pkl file.
-To use a specific model in your scoring file, change references from model.pkl to the model you want to use. In our scenario, replace model.pkl with dt.pkl
+To use a different model in the service, we can perform a simple update to the service. In the Churn Prediction experiment, the accuracy of Decision Tree is slightly higher than Naive Bayes. So, we can update the service to use the dt.pkl file.
+To use a specific model in your scoring file, change references from model.pkl to the model you want to use. Replace model.pkl with dt.pkl to use decision tree model.
 There are three steps to perform in order to update the service:
 
-**1. Register dt model:**
+**1. Register dt model**
 
 ```az ml model register -m dt.pkl -n dt.pkl```
 
 You will now be able to see the new model (or newer version if you had previously registered dt) when you run ```az ml model list -o table```
 
-**2. Create manifest:**
+**2. Create manifest**
 
 Create a manifest for the model in Azure Container Services. To do so, in the next command, we replace <model_id> with the model ID that was returned in the last command:
 
@@ -122,7 +122,7 @@ You will get the manifest Id when you run az ml manifest create. Make a note of 
 
 ```az ml image create -n churnpred --manifest-id <manifest_id>```
 
-**3. Update service with image:**
+**3. Update service with image**
 
 Finally, the last step is to update the existing service out of the new image created. We would need the image id created from the last step along with the service id. To obtain the service id, run *az ml service list realtime* to get a list of all the service ids. Run the below command to update the service:
 
