@@ -124,7 +124,7 @@ You will get the manifest Id when you run az ml manifest create. Make a note of 
 
 **3. Update service with image**
 
-Finally, the last step is to update the existing service out of the new image created. We would need the image id created from the last step along with the service id. To obtain the service id, run *az ml service list realtime* to get a list of all the service ids. Run the below command to update the service:
+Finally, the last step is to update the existing service out of the new image created. We would need the image id created from the last step along with the service id. To obtain the service id, run ```az ml service list realtime``` to get a list of all the service ids. Run the below command to update the service:
 
 ```az ml service update realtime -i <service_id_on_portal> --image-id <new_image_id>```
 
